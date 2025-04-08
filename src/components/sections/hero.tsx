@@ -59,9 +59,8 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.7, ease: easeInOutCubic }}
             className="max-w-2xl mx-auto text-xl mb-8 font-medium text-balance"
           >
-            {siteConfig.name} transforms your speech into text instantly.
-            Perfect for quick note-taking, content creation, and capturing ideas
-            on-the-go.
+            How&apos;s the weather at YOUR game? The most adavnced football
+            weather app ever created. Download for FREE now.
           </motion.p>
           <div className="flex justify-center mb-16">
             <motion.img
