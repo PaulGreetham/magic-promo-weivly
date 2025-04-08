@@ -1,14 +1,17 @@
-import {
-  JetBrains_Mono as FontMono,
-  Inter as FontSans,
-} from "next/font/google";
+import { Bebas_Neue, Poppins } from "next/font/google";
 
-export const fontSans = FontSans({
+export const fontHeading = Bebas_Neue({
   subsets: ["latin"],
-  variable: "--font-sans",
+  weight: "400",
+  variable: "--font-heading",
 });
 
-export const fontMono = FontMono({
+export const fontText = Poppins({
   subsets: ["latin"],
-  variable: "--font-mono",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-text",
 });
+
+// For backward compatibility with existing code
+export const fontSans = fontText;
+export const fontMono = fontText;

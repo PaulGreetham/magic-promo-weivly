@@ -9,7 +9,7 @@ export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl;
   const postTitle = searchParams.get("title") || siteConfig.description;
   const font = fetch(
-    new URL("../../assets/fonts/Inter-SemiBold.ttf", import.meta.url)
+    new URL("../../assets/fonts/BebasNeue-Regular.ttf", import.meta.url)
   ).then((res) => res.arrayBuffer());
   const fontData = await font;
 
@@ -28,6 +28,7 @@ export async function GET(req: NextRequest) {
           backgroundImage: `url(${siteConfig.url}/og.png)`,
           fontSize: 32,
           fontWeight: 600,
+          fontFamily: "BebasNeue",
         }}
       >
         <div
@@ -58,6 +59,7 @@ export async function GET(req: NextRequest) {
               textAlign: "center",
               width: "80%",
               letterSpacing: "-0.05em", // Added tighter tracking
+              fontFamily: "BebasNeue",
             }}
           >
             {postTitle}
@@ -69,6 +71,7 @@ export async function GET(req: NextRequest) {
               fontWeight: "500",
               marginTop: "16px",
               color: "#808080",
+              fontFamily: "BebasNeue",
             }}
           >
             {siteConfig.name}
@@ -95,7 +98,7 @@ export async function GET(req: NextRequest) {
       height: 630,
       fonts: [
         {
-          name: "Inter",
+          name: "BebasNeue",
           data: fontData,
           style: "normal",
         },
