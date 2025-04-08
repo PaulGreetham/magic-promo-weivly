@@ -14,6 +14,7 @@ export const siteConfig = {
   description: "My Game Weather",
   cta: "Download Now",
   url: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
+  appStoreUrl: "https://apps.apple.com/nl/app/my-game-weather/id6742402918?l=en-GB",
   keywords: [
     "AI Calendar",
     "Smart Scheduling",

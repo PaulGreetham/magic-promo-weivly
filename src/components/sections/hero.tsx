@@ -53,32 +53,38 @@ export function Hero() {
           >
             {siteConfig.description}
           </motion.h1>
-          <motion.p
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.7, ease: easeInOutCubic }}
-            className="max-w-2xl mx-auto text-xl mb-8 font-medium text-balance"
+            className="max-w-2xl mx-auto text-xl mb-8 font-medium space-y-2"
           >
-            How&apos;s the weather at YOUR game? The most adavnced football
-            weather app ever created. Download for FREE now.
-          </motion.p>
-          <div className="flex justify-center mb-16">
-            <motion.img
-              src="/download-black.svg"
-              alt="Download"
+            <p>How&apos;s the weather at YOUR game?</p>
+            <p>The most adavnced football weather app ever created. Download for FREE now.</p>
+          </motion.div>
+          <div className="flex justify-center gap-4 mb-16">
+            <motion.a
+              href="https://apps.apple.com/nl/app/my-game-weather/id6742402918?l=en-GB"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 1 }}
-              className="w-40 flex-shrink-0 dark:hidden block"
-            />
-            <motion.img
-              src="/download-white.svg"
-              alt="Download"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 1 }}
-              className="w-40 flex-shrink-0 hidden dark:block"
-            />
+              className="h-12"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img 
+                src="/download-black.svg" 
+                alt="Download on the App Store" 
+                className="h-full w-auto dark:hidden"
+              />
+              <img 
+                src="/download-white.svg" 
+                alt="Download on the App Store" 
+                className="h-full w-auto hidden dark:block"
+              />
+            </motion.a>
+            
+            {/* You can add Google Play badge here if needed */}
           </div>
         </div>
         <div className="flex flex-nowrap items-center justify-center gap-4 sm:gap-8 h-auto sm:h-[500px] select-none">
