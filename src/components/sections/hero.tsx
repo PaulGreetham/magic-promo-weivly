@@ -30,8 +30,8 @@ export function Hero() {
             className="mb-16 relative z-20"
             style={{ transformOrigin: "top" }}
           >
-            <div className="bg-primary text-white text-xl font-bold p-4 h-20 w-20 flex items-center justify-center rounded-3xl mx-auto shadow-md">
-              <Icons.logo className="w-auto h-[40px]" />
+            <div className="bg-primary text-white text-xl font-bold p-3 h-20 w-20 flex items-center justify-center rounded-3xl mx-auto shadow-md">
+              <Icons.logo className="w-auto h-[60px]" />
             </div>
           </motion.div>
           <motion.div
@@ -59,8 +59,8 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.7, ease: easeInOutCubic }}
             className="max-w-2xl mx-auto text-xl mb-8 font-medium space-y-2"
           >
-            <p>How&apos;s the weather at YOUR game?</p>
-            <p>The most adavnced football weather app ever created. Download for FREE now.</p>
+            <p>The most adavnced football weather app ever created.</p>
+            <p>Download for FREE now.</p>
           </motion.div>
           <div className="flex justify-center gap-4 mb-16">
             <motion.a

@@ -2,22 +2,17 @@ type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
   logo: (props: IconProps) => (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <path d="M8 2v4"></path>
-      <path d="M16 2v4"></path>
-      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
-      <path d="M3 10h18"></path>
+    <svg width="24" height="24" viewBox="0 0 1201 1201" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path d="M600.344 50.2217V150.222" stroke="currentColor" stroke-width="80" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M600.344 1050.22V1150.22" stroke="currentColor" stroke-width="80" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M211.344 211.222L282.344 282.222" stroke="currentColor" stroke-width="80" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M918.344 918.222L989.344 989.222" stroke="currentColor" stroke-width="80" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M50.3438 600.222H150.344" stroke="currentColor" stroke-width="80" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M1050.34 600.222H1150.34" stroke="currentColor" stroke-width="80" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M211.344 989.222L282.344 918.222" stroke="currentColor" stroke-width="80" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M918.344 282.222L989.344 211.222" stroke="currentColor" stroke-width="80" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M600 900C765.685 900 900 765.685 900 600C900 434.315 765.685 300 600 300C434.315 300 300 434.315 300 600C300 765.685 434.315 900 600 900Z" stroke="currentColor" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M500.703 572.321L600 500.357L699.297 572.321L661.585 688.571H538.761L500.703 572.321ZM600 290C641.979 290 682.113 298.188 720.402 314.565C758.69 330.941 791.674 352.969 819.353 380.647C847.031 408.326 869.059 441.31 885.435 479.598C901.812 517.887 910 558.021 910 600C910 641.979 901.812 682.113 885.435 720.402C869.059 758.69 847.031 791.674 819.353 819.353C791.674 847.031 758.69 869.059 720.402 885.435C682.113 901.812 641.979 910 600 910C558.021 910 517.887 901.812 479.598 885.435C441.31 869.059 408.326 847.031 380.647 819.353C352.969 791.674 330.941 758.69 314.565 720.402C298.188 682.113 290 641.979 290 600C290 558.021 298.188 517.887 314.565 479.598C330.941 441.31 352.969 408.326 380.647 380.647C408.326 352.969 441.31 330.941 479.598 314.565C517.887 298.188 558.021 290 600 290ZM814.163 757.076C848.53 710.253 865.714 657.894 865.714 600V598.962L830.424 629.754L747.388 552.254L769.185 440.502L815.547 444.654C780.949 397.139 736.086 364.617 680.96 347.087L699.297 389.989L600 445L500.703 389.989L519.04 347.087C463.914 364.617 419.051 397.139 384.453 444.654L431.161 440.502L452.612 552.254L369.576 629.754L334.286 598.962V600C334.286 657.894 351.469 710.253 385.837 757.076L396.217 711.406L509.007 725.246L557.098 828.348L516.964 852.221C543.951 861.217 571.629 865.714 600 865.714C628.371 865.714 656.049 861.217 683.036 852.221L642.902 828.348L690.993 725.246L803.783 711.406L814.163 757.076Z" fill="currentColor"/>
     </svg>
   ),
   twitter: (props: IconProps) => (
