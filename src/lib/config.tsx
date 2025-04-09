@@ -80,7 +80,7 @@ export const siteConfig = {
       direction: "ltr" as const,
     },
     {
-      title: "Incredible Visualizations",
+      title: "Advanced Visualizations",
       description:
         "Bring your game to life with amazing weather animations for temperature, rain, wind & pressure.",
       imageSrc: "/MyGameWeather_Promo_Visualization.svg",
