@@ -39,7 +39,7 @@ export function FeatureScroll() {
     <Section
       id="feature-scroll"
       title="Experience"
-      subtitle="An app unlike any other"
+      subtitle="How's the weather at YOUR game?"
       className="container px-4 sm:px-10"
     >
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mx-auto select-none">

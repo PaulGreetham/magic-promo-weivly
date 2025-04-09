@@ -89,7 +89,7 @@ export function Hero() {
         </div>
         <div className="flex flex-nowrap items-center justify-center gap-4 sm:gap-8 h-auto sm:h-[500px] select-none">
           <motion.img
-            src="/Device-1.png"
+            src="/MyGameWeather_Promo_Team_Search.png"
             alt="iPhone"
             initial={{ opacity: 0, x: -200 }}
             animate={{ opacity: 1, x: 0 }}
@@ -98,7 +98,7 @@ export function Hero() {
             className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0"
           />
           <motion.img
-            src="/Device-2.png"
+            src="MyGameWeather_Promo_Rain.png"
             alt="iPhone"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
@@ -107,7 +107,7 @@ export function Hero() {
             className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0"
           />
           <motion.img
-            src="/Device-3.png"
+            src="/MyGameWeather_Promo_Weather.png"
             alt="iPhone"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -116,7 +116,7 @@ export function Hero() {
             className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0"
           />
           <motion.img
-            src="/Device-4.png"
+            src="/MyGameWeather_Promo_Pressure.png"
             alt="iPhone"
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
@@ -125,7 +125,7 @@ export function Hero() {
             className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0"
           />
           <motion.img
-            src="/Device-5.png"
+            src="/MyGameWeather_Promo_Charts.png"
             alt="iPhone"
             initial={{ opacity: 0, x: 200 }}
             animate={{ opacity: 1, x: 0 }}
