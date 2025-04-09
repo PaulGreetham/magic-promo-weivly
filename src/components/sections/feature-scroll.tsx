@@ -45,21 +45,21 @@ export function FeatureScroll() {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mx-auto select-none">
         <motion.img
           ref={phone1Ref}
-          src="/MyGameWeather_Promo_Weather_Info.png"
+          src="/MyGameWeather_Promo_Weather_Info.svg"
           alt="iPhone 1"
           className="w-full h-auto -z-10 max-w-[250px] sm:max-w-[300px] mx-auto"
           style={{ y: y1 }}
         />
         <motion.img
           ref={phone2Ref}
-          src="/MyGameWeather_Promo_Pressure.png"
+          src="/MyGameWeather_Promo_Pressure.svg"
           alt="iPhone 2"
           className="w-full h-auto -z-10 max-w-[250px] sm:max-w-[300px] mx-auto"
           style={{ y: y2 }}
         />
         <motion.img
           ref={phone3Ref}
-          src="/MyGameWeather_Promo_Charts.png"
+          src="/MyGameWeather_Promo_Charts.svg"
           alt="iPhone 3"
           className="w-full h-auto -z-10 max-w-[250px] sm:max-w-[300px] mx-auto"
           style={{ y: y3 }}

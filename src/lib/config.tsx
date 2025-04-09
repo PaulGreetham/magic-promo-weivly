@@ -69,30 +69,30 @@ export const siteConfig = {
       title: "Global Coverage",
       description:
         "Access every team from 1,100+ leagues & cups worldwide with a single search.",
-      imageSrc: "/MyGameWeather_Promo_Global_Search.png",
+      imageSrc: "/MyGameWeather_Promo_Global_Search.svg",
       direction: "rtl" as const,
     },
     {
       title: "Elite Weather Data",
       description:
         "See accurate weather forecasts from industry leading global data sources.",
-      imageSrc: "/MyGameWeather_Promo_Temp.png",
+      imageSrc: "/MyGameWeather_Promo_Temp.svg",
       direction: "ltr" as const,
     },
     {
       title: "Incredible Visualizations",
       description:
         "Bring your game to life with amazing weather animations for temperature, rain, wind & pressure.",
-      imageSrc: "/MyGameWeather_Promo_Visualization.png",
+      imageSrc: "/MyGameWeather_Promo_Visualization.svg",
       direction: "rtl" as const,
     },
   ],
   bento: [
     {
-      title: "AI-Powered Scheduling",
+      title: "Send Weather Notifications",
       content:
-        "Our app uses advanced AI to optimize your calendar, suggesting the best times for meetings and tasks based on your preferences and habits.",
-      imageSrc: "/Device-1.png",
+        "Be prepared for all eventualities with weather notifications for your favorite teams 3 days in advance of the fixture. Notifications are always free.",
+      imageSrc: "/MyGameWeather_Promo_Notifications.svg",
       imageAlt: "AI scheduling illustration",
       fullWidth: true,
     },

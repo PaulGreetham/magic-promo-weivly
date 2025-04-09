@@ -50,7 +50,7 @@ export function BentoGrid() {
     <Section
       id="bento"
       title="Benefits"
-      subtitle="It does a lot of things"
+      subtitle="What can MGW do for you?"
       className="mx-auto max-w-screen-md px-10"
       ref={ref}
     >
