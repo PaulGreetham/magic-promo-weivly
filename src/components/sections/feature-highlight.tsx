@@ -130,7 +130,7 @@ export function FeatureHighlight() {
     <Section
       id="feature-highlight"
       title="Features"
-      subtitle="Powerful features"
+      subtitle="Take control of your game"
       className="container px-10"
       ref={containerRef}
     >

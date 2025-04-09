@@ -66,24 +66,24 @@ export const siteConfig = {
   ],
   featureHighlight: [
     {
-      title: "AI-Powered Scheduling",
+      title: "Global Coverage",
       description:
-        "Intelligent scheduling that learns your preferences and optimizes your time.",
-      imageSrc: "/Device-2.png",
+        "Access every team from 1,100+ leagues & cups worldwide with a single search.",
+      imageSrc: "/MyGameWeather_Promo_Global_Search.png",
       direction: "rtl" as const,
     },
     {
-      title: "Smart Time Blocking",
+      title: "Elite Weather Data",
       description:
-        "Automatically block time for focused work and personal activities.",
-      imageSrc: "/Device-3.png",
+        "See accurate weather forecasts from industry leading global data sources.",
+      imageSrc: "/MyGameWeather_Promo_Temp.png",
       direction: "ltr" as const,
     },
     {
-      title: "Predictive Event Planning",
+      title: "Incredible Visualizations",
       description:
-        "AI suggests optimal times for meetings and events based on your habits.",
-      imageSrc: "/Device-4.png",
+        "Bring your game to life with amazing weather animations for temperature, rain, wind & pressure.",
+      imageSrc: "/MyGameWeather_Promo_Visualization.png",
       direction: "rtl" as const,
     },
   ],
