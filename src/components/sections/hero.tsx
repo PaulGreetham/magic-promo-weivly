@@ -98,7 +98,7 @@ export function Hero() {
             className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0"
           />
           <motion.img
-            src="MyGameWeather_Promo_Rain.png"
+            src="/MyGameWeather_Promo_Fixtures.png"
             alt="iPhone"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
@@ -116,7 +116,7 @@ export function Hero() {
             className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0"
           />
           <motion.img
-            src="/MyGameWeather_Promo_Pressure.png"
+            src="/MyGameWeather_Promo_Rain.png"
             alt="iPhone"
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
@@ -125,7 +125,7 @@ export function Hero() {
             className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0"
           />
           <motion.img
-            src="/MyGameWeather_Promo_Charts.png"
+            src="/MyGameWeather_Promo_Profile.png"
             alt="iPhone"
             initial={{ opacity: 0, x: 200 }}
             animate={{ opacity: 1, x: 0 }}
