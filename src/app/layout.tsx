@@ -6,6 +6,7 @@ import { fontHeading, fontText } from "@/lib/fonts";
 import { cn, constructMetadata } from "@/lib/utils";
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = constructMetadata({
   title: `${siteConfig.name} | ${siteConfig.description}`,
@@ -42,6 +43,7 @@ export default function RootLayout({
           {children}
           <ThemeToggle />
           <TailwindIndicator />
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
