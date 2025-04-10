@@ -229,52 +229,66 @@ export const siteConfig = {
   ],
   faqs: [
     {
-      question: "How does AI improve my scheduling?",
+      question: "How accurate is the weather data in the app?",
       answer: (
         <span>
-          Our AI analyzes your scheduling patterns, preferences, and
-          productivity data to suggest optimal times for tasks and meetings. It
-          learns from your behavior to continuously improve its recommendations.
+          MGW uses industry-leading global weather data sources to provide highly accurate forecasts. Our weather data is updated multiple times per day to ensure you have the most current information for any fixture.
         </span>
       ),
     },
     {
-      question: "Can I integrate Cal AI with other apps?",
+      question: "How far in advance can I check weather for upcoming matches?",
       answer: (
         <span>
-          Yes, Cal AI integrates with popular productivity tools and calendar
-          apps. You can sync with Google Calendar, Outlook, and more to
-          centralize your scheduling.
+          Weather data visuzlaizations are available 4 days in advance. You can check weather forecasts, such as data info, charts and tables, for upcoming fixtures up to 14 days in advance. For the most accurate predictions, we recommend checking within 7 days of the match, as weather forecasts become more precise as the fixture approaches.
         </span>
       ),
     },
     {
-      question: "How does the team collaboration feature work?",
+      question: "How do I set notifications for my favorite team's matches?",
       answer: (
         <span>
-          Team collaboration allows you to share availability, schedule group
-          meetings, and coordinate tasks. The AI considers everyone&apos;s
-          schedules to find the best times for team activities.
+          Simply create a profile, search for your favorite team, and mark them as a favorite. You'll then have the option to receive weather notifications 3 days before any fixture. Notifications are completely free and can be customized in your profile settings.
         </span>
       ),
     },
     {
-      question: "Is my data secure with Cal AI?",
+      question: "How many teams and leagues are covered in the app?",
       answer: (
         <span>
-          We take data security seriously. All your calendar data is encrypted
-          end-to-end and stored securely in the cloud. We never share your
-          personal information or scheduling data with third parties.
+          MGW provides weather data for over 25,000 teams across 1,100+ leagues and cups worldwide. From the biggest professional leagues to local non-league clubs, we've got comprehensive global coverage to support fans at every level.
         </span>
       ),
     },
     {
-      question: "Can I use Cal AI offline?",
+      question: "What weather information is available for each match?",
       answer: (
         <span>
-          While full functionality requires an internet connection, you can view
-          your schedule and add events offline. The app will sync and apply AI
-          optimizations when you&apos;re back online.
+          For each fixture, you can access detailed hourly data including temperature, 'feels like' temperature, wind speed and direction, precipitation probability, rainfall amounts, air pressure, and humidity. All data is presented with easy-to-understand visualizations.
+        </span>
+      ),
+    },
+    {
+      question: "Is MGW available for both iOS and Android?",
+      answer: (
+        <span>
+          Yes, MGW is available for both iOS and Android. Go to the top of the page for both the iOS and Android download links.
+        </span>
+      ),
+    },
+    {
+      question: "What's the difference between the free and paid versions?",
+      answer: (
+        <span>
+          The free Universal version gives you complete access to all weather data and features. Our paid plans (Supporter, Season Ticket, and Ultra) simply remove advertisements from the experience. All core weather features are available in every plan.
+        </span>
+      ),
+    },
+    {
+      question: "How can I provide feedback or report issues with the app?",
+      answer: (
+        <span>
+          We welcome your feedback! You can contact us directly at info@mgw.football or reach out via our social media channels. We're constantly working to improve the app and value user suggestions for new features and improvements.
         </span>
       ),
     },
