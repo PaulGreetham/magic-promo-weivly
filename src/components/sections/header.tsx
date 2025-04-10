@@ -64,32 +64,27 @@ export function Header() {
             <Link
               href="/"
               title="brand-logo"
-              className="relative mr-6 flex items-center space-x-2"
+              className="relative mr-6 flex items-center space-x-1"
             >
-              <Icons.logo className="w-auto" />
-              <span className="font-bold text-xl">{siteConfig.name}</span>
+              <Icons.logo className="w-auto h-7" />
+              <span className="text-style-h2 uppercase tracking-wider pb-1 mt-2">My Game Weather</span>
             </Link>
-            <div className="hidden lg:block">
-              <a
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  const heroSection = document.getElementById('hero');
-                  if (heroSection) {
-                    heroSection.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }}
-                className={cn(
-                  buttonVariants({ variant: "default" }),
-                  "h-8 text-white rounded-full group cursor-pointer"
-                )}
-              >
-                {siteConfig.cta}
-              </a>
-            </div>
-            <div className="mt-2 cursor-pointer block lg:hidden">
-              <MobileDrawer />
-            </div>
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                const heroSection = document.getElementById('hero');
+                if (heroSection) {
+                  heroSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className={cn(
+                buttonVariants({ variant: "default" }),
+                "h-8 py-1 lg:py-5 text-white rounded-full group cursor-pointer text-xs lg:text-base"
+              )}
+            >
+              {siteConfig.cta}
+            </a>
           </div>
           <motion.hr
             initial={{ opacity: 0 }}

@@ -110,7 +110,7 @@ export const siteConfig = {
       fullWidth: false,
     },
     {
-      title: "Receive Notifications",
+      title: "Notifications",
       content:
         "Be prepared for all eventualities with weather notifications for your favorite teams 3 days in advance of the fixture. Notifications are always free.",
       imageSrc: "/MyGameWeather_Promo_Notifications.svg",
@@ -137,22 +137,22 @@ export const siteConfig = {
   benefits: [
     {
       id: 1,
-      text: "Search from 25,000+ teams globally",
+      text: "Search from 25,000+ teams",
       image: "/MyGameWeather_Promo_Global_Search.svg",
     },
     {
       id: 2,
-      text: "Choose from the team's next 5 fixtures",
+      text: "Choose from next 5 fixtures",
       image: "/MyGameWeather_Promo_Fixtures.svg",
     },
     {
       id: 3,
-      text: "See advanced weather data visualizations",
+      text: "See advanced visualizations",
       image: "/MyGameWeather_Promo_Visualization.svg",
     },
     {
       id: 4,
-      text: "Get hourly insights from data sources",
+      text: "Get hourly insights",
       image: "/MyGameWeather_Promo_All_Weather_Data.svg",
     },
     {
