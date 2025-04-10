@@ -32,15 +32,22 @@ export function MobileDrawer() {
           </div>
         </DrawerHeader>
         <DrawerFooter>
-          <Link
+          <a
             href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              const heroSection = document.getElementById('hero');
+              if (heroSection) {
+                heroSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
             className={cn(
               buttonVariants({ variant: "default" }),
-              "text-white rounded-full group"
+              "text-white rounded-full group cursor-pointer"
             )}
           >
             {siteConfig.cta}
-          </Link>
+          </a>
         </DrawerFooter>
       </DrawerContent>
     </Drawer>

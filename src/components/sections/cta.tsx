@@ -1,10 +1,11 @@
+"use client";
+
 import { Icons } from "@/components/icons";
 import { buttonVariants } from "@/components/ui/button";
 import Marquee from "@/components/ui/marquee";
 import { siteConfig } from "@/lib/config";
 import { cn } from "@/lib/utils";
 import { ChevronRight } from "lucide-react";
-import Link from "next/link";
 
 const reviews = [
   {
@@ -84,6 +85,14 @@ const ReviewCard = ({
 };
 
 export function CTA() {
+  const handleScrollToTop = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const heroSection = document.getElementById('hero');
+    if (heroSection) {
+      heroSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="cta">
       <div className="py-14 container mx-auto px-4 max-w-[1000px] ">
@@ -135,24 +144,24 @@ export function CTA() {
               ))}
             </Marquee>
           </div>
-          <div className="z-10 mx-auto size-24 rounded-[2rem] border bg-white/10 p-3 shadow-2xl backdrop-blur-md dark:bg-black/10 lg:size-32">
+          <div className="z-10 mx-auto size-24 rounded-[2rem] border bg-primary text-white p-3 shadow-2xl backdrop-blur-md dark:bg-primary lg:size-32">
             <Icons.logo className="w-auto h-full" />
           </div>
           <div className="z-10 mt-4 flex flex-col items-center text-center text-black dark:text-white">
             <h1 className="text-3xl font-bold lg:text-4xl">
               {siteConfig.name}
             </h1>
-            <p className="mt-2">{siteConfig.description}</p>
-            <Link
+            <a
               href="#"
+              onClick={handleScrollToTop}
               className={cn(
                 buttonVariants({ variant: "default" }),
-                "h-8 text-white rounded-full group mt-4"
+                "h-8 text-white rounded-full group mt-4 cursor-pointer"
               )}
             >
               {siteConfig.cta}
               <ChevronRight className="ml-1 size-4 transition-all duration-300 ease-out group-hover:translate-x-1" />
-            </Link>
+            </a>
           </div>
           <div className="absolute inset-x-0 bottom-0 h-full bg-gradient-to-b from-transparent to-white to-70% dark:to-black" />
         </div>

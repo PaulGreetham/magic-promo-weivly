@@ -2,8 +2,15 @@ import {
   BellIcon,
   BrainIcon,
   CalendarIcon,
+  ChartLineIcon,
   ClockIcon,
   CloudIcon,
+  CloudSunRainIcon,
+  EarthIcon,
+  EyeIcon,
+  GlobeIcon,
+  StarIcon,
+  TableIcon,
   UsersIcon,
 } from "lucide-react";
 
@@ -16,52 +23,50 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
   appStoreUrl: "https://apps.apple.com/nl/app/my-game-weather/id6742402918?l=en-GB",
   keywords: [
-    "AI Calendar",
-    "Smart Scheduling",
-    "Productivity",
-    "Time Management",
+    "Football",
+    "Weather",
+    "Sports",
+    "Weather Forecast",
   ],
   links: {
-    email: "support@calai.app",
-    twitter: "https://twitter.com/calaiapp",
-    discord: "https://discord.gg/calaiapp",
-    github: "https://github.com/calaiapp",
-    instagram: "https://instagram.com/calaiapp",
+    email: "info@mgw.football",
+    twitter: "https://twitter.com/mgw_football",
+    instagram: "https://instagram.com/mgw_football",
   },
   features: [
     {
-      name: "AI-Powered Scheduling",
+      name: "Global Coverage",
       description:
-        "Intelligent scheduling that learns your preferences and optimizes your time.",
-      icon: <BrainIcon className="h-6 w-6" />,
+        "Access 25,000+ teams from 1,100+ leagues & cups worldwide with a single search.",
+      icon: <EarthIcon className="h-6 w-6" />,
     },
     {
-      name: "Smart Time Blocking",
+      name: "Elite Weather Data",
       description:
-        "Automatically block time for focused work and personal activities.",
-      icon: <ClockIcon className="h-6 w-6" />,
+        "See accurate weather forecasts from industry leading global data sources.",
+      icon: <CloudSunRainIcon className="h-6 w-6" />,
     },
     {
-      name: "Predictive Event Planning",
+      name: "Advanced Visualizations",
       description:
-        "AI suggests optimal times for meetings and events based on your habits.",
-      icon: <CalendarIcon className="h-6 w-6" />,
+        "Bring your game to life with amazing weather animations for temperature, rain, wind & pressure.",
+      icon: <EyeIcon className="h-6 w-6" />,
     },
     {
-      name: "Cloud Sync",
-      description: "Access your schedule across all devices in real-time.",
-      icon: <CloudIcon className="h-6 w-6" />,
+      name: "Hourly Data Tables",
+      description: "Easily see hourly weather data for your favorite teams fixture with detailed information.",
+      icon: <TableIcon className="h-6 w-6" />,
     },
     {
-      name: "Team Collaboration",
-      description: "Easily coordinate schedules with team members and clients.",
-      icon: <UsersIcon className="h-6 w-6" />,
-    },
-    {
-      name: "Smart Reminders",
-      description:
-        "Contextual notifications that adapt to your schedule and priorities.",
+      name: "Notifications",
+      description: "Receive weather notifications 3 days in advance for your favorite teams' fixtures.",
       icon: <BellIcon className="h-6 w-6" />,
+    },
+    {
+      name: "Favourite Team",
+      description:
+        "Create a profile to save your favorite teams and easily find their weather data.",
+      icon: <StarIcon className="h-6 w-6" />,
     },
   ],
   featureHighlight: [
@@ -157,7 +162,7 @@ export const siteConfig = {
     },
     {
       id: 6,
-      text: "Receive weather notifications 3 days in advance",
+      text: "Receive weather notifications",
       image: "/MyGameWeather_Promo_Notifications.svg",
     }
   ],

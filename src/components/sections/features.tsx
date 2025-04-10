@@ -1,9 +1,20 @@
+"use client";
+
 import { Section } from "@/components/section";
 import { siteConfig } from "@/lib/config";
 import Link from "next/link";
 
 export function Features() {
   const services = siteConfig.features;
+  
+  const handleScrollToTop = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const heroSection = document.getElementById('hero');
+    if (heroSection) {
+      heroSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <Section
       id="features"
@@ -26,9 +37,13 @@ export function Features() {
               </h2>
             </div>
             <p className="text-sm text-muted-foreground mb-4">{description}</p>
-            <Link href="#" className="text-sm text-primary hover:underline">
-              Learn more &gt;
-            </Link>
+            <a 
+              href="#" 
+              onClick={handleScrollToTop}
+              className="text-sm text-primary hover:underline cursor-pointer"
+            >
+              Download Now &gt;
+            </a>
           </div>
         ))}
       </div>

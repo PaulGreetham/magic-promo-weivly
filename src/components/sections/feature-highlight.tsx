@@ -77,16 +77,23 @@ function Feature({
             {description}
           </motion.p>
           <motion.div variants={itemVariants}>
-            <Link
+            <a
               href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                const heroSection = document.getElementById('hero');
+                if (heroSection) {
+                  heroSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
               className={cn(
                 buttonVariants({ variant: "default", size: "lg" }),
                 "text-white rounded-full group text-lg",
-                "mx-auto lg:mx-0"
+                "mx-auto lg:mx-0 cursor-pointer"
               )}
             >
               {siteConfig.cta}
-            </Link>
+            </a>
           </motion.div>
         </div>
       </motion.div>

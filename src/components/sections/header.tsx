@@ -70,15 +70,22 @@ export function Header() {
               <span className="font-bold text-xl">{siteConfig.name}</span>
             </Link>
             <div className="hidden lg:block">
-              <Link
+              <a
                 href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const heroSection = document.getElementById('hero');
+                  if (heroSection) {
+                    heroSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
                 className={cn(
                   buttonVariants({ variant: "default" }),
-                  "h-8 text-white rounded-full group"
+                  "h-8 text-white rounded-full group cursor-pointer"
                 )}
               >
                 {siteConfig.cta}
-              </Link>
+              </a>
             </div>
             <div className="mt-2 cursor-pointer block lg:hidden">
               <MobileDrawer />
