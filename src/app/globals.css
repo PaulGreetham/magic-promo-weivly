@@ -212,3 +212,37 @@
     transform: scale(1.01); /* Slight scaling to force better rendering */
   }
 }
+
+/* Add these SVG enhancement rules to your globals.css */
+@media screen and (max-width: 768px) {
+  /* Class for SVG objects */
+  .svg-enhanced {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    filter: none !important;
+  }
+  
+  /* Force browser to render SVGs at high quality */
+  [type="image/svg+xml"] {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Add this to your CSS */
+.mobile-svg-enhance,
+object[type="image/svg+xml"] {
+  background-color: transparent !important; /* Forces transparency */
+}
+
+/* Target specifically the problematic iPhone mockups */
+[src*="MyGameWeather_Promo_"] {
+  background-color: transparent !important;
+  border-radius: 0; /* Remove border radius */
+}
+
+/* Add this new rule to make the phone container blend with page background */
+.phone-container {
+  background-color: transparent !important;
+  overflow: visible !important; /* Allow the content to flow outside the container */
+}
