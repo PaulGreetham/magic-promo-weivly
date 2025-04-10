@@ -71,7 +71,7 @@ export function Header() {
               className="relative mr-6 flex items-center space-x-1"
             >
               <Icons.logo className="w-auto h-7" />
-              <span className="text-style-h2 uppercase tracking-wider pb-1 mt-2">My Game Weather</span>
+              <span className="text-style-h2 uppercase tracking-wider pb-1 mt-2">MGW</span>
             </Link>
             <div className="flex items-center gap-2">
               <a
