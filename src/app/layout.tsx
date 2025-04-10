@@ -6,14 +6,7 @@ import { fontHeading, fontText } from "@/lib/fonts";
 import { cn, constructMetadata } from "@/lib/utils";
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import dynamic from 'next/dynamic';
-
-// Conditionally import Analytics only if the package exists
-const Analytics = dynamic(() => 
-  import('@vercel/analytics/react').then(mod => mod.Analytics)
-    .catch(() => () => null), 
-  { ssr: false, loading: () => null }
-);
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = constructMetadata({
   title: `${siteConfig.name} | ${siteConfig.description}`,
