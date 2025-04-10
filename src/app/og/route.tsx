@@ -8,10 +8,11 @@ export const runtime = "edge";
 export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl;
   const postTitle = searchParams.get("title") || siteConfig.description;
-  const font = fetch(
-    new URL("../../assets/fonts/BebasNeue-Regular.ttf", import.meta.url)
+  
+  // Instead of loading a local font, you can use a Google Font
+  const fontData = await fetch(
+    `https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap`
   ).then((res) => res.arrayBuffer());
-  const fontData = await font;
 
   return new ImageResponse(
     (
@@ -28,7 +29,7 @@ export async function GET(req: NextRequest) {
           backgroundImage: `url(${siteConfig.url}/og.png)`,
           fontSize: 32,
           fontWeight: 600,
-          fontFamily: "BebasNeue",
+          fontFamily: "'Bebas Neue', sans-serif",
         }}
       >
         <div
@@ -98,7 +99,7 @@ export async function GET(req: NextRequest) {
       height: 630,
       fonts: [
         {
-          name: "BebasNeue",
+          name: "Bebas Neue",
           data: fontData,
           style: "normal",
         },
