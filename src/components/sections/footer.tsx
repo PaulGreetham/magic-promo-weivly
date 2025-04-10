@@ -2,29 +2,44 @@ import { Icons } from "@/components/icons";
 import { siteConfig } from "@/lib/config";
 import {
   InstagramLogoIcon,
-  LinkedInLogoIcon,
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
+import { TermsModal } from "@/components/terms-modal";
+import { FaThreads, FaTiktok } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
 interface Icon {
   icon: JSX.Element;
   url: string;
+  label: string;
 }
 
 const icons: Icon[] = [
-  { icon: <LinkedInLogoIcon />, url: "#" },
-  { icon: <InstagramLogoIcon />, url: "#" },
-  { icon: <TwitterLogoIcon />, url: "#" },
-];
-
-type Link = {
-  text: string;
-  url: string;
-};
-
-const links: Link[] = [
-  { text: "Pricing", url: "#" },
-  { text: "Contact", url: "#" },
+  { 
+    icon: <TwitterLogoIcon className="w-5 h-5" />, 
+    url: "https://twitter.com/mgw_football",
+    label: "Twitter"
+  },
+  { 
+    icon: <InstagramLogoIcon className="w-5 h-5" />, 
+    url: "https://instagram.com/mgw_football",
+    label: "Instagram"
+  },
+  { 
+    icon: <FaThreads className="w-4 h-4" />, 
+    url: "https://threads.net/@mgw_football",
+    label: "Threads"
+  },
+  { 
+    icon: <FaTiktok className="w-4 h-4" />, 
+    url: "https://tiktok.com/@mgw_football",
+    label: "TikTok"
+  },
+  { 
+    icon: <MdEmail className="w-5 h-5" />, 
+    url: "mailto:info@mgw.football",
+    label: "Email"
+  },
 ];
 
 export function Footer() {
@@ -38,11 +53,14 @@ export function Footer() {
           </h2>
         </div>
 
-        <div className="flex gap-x-2">
+        <div className="flex gap-x-3">
           {icons.map((icon, index) => (
             <a
               key={index}
               href={icon.url}
+              aria-label={icon.label}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex h-5 w-5 items-center justify-center text-muted-foreground transition-all duration-100 ease-linear hover:text-foreground hover:underline hover:underline-offset-4"
             >
               {icon.icon}
@@ -51,16 +69,9 @@ export function Footer() {
         </div>
       </div>
       <div className="flex flex-col justify-between gap-y-5 md:flex-row md:items-center">
-        <ul className="flex flex-col gap-x-5 gap-y-2 text-muted-foreground md:flex-row md:items-center">
-          {links.map((link, index) => (
-            <li
-              key={index}
-              className="text-[15px]/normal font-medium text-muted-foreground transition-all duration-100 ease-linear hover:text-foreground hover:underline hover:underline-offset-4"
-            >
-              <a href={link.url}>{link.text}</a>
-            </li>
-          ))}
-        </ul>
+        <div className="text-[15px]/normal font-medium">
+          <TermsModal />
+        </div>
         <div className="flex items-center justify-between text-sm font-medium tracking-tight text-muted-foreground">
           <p>All rights reserved.</p>
         </div>
