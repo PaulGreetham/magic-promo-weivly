@@ -3,6 +3,8 @@
 import { Section } from "@/components/section";
 import { siteConfig } from "@/lib/config";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
 
 export function Features() {
   const services = siteConfig.features;
@@ -40,9 +42,12 @@ export function Features() {
             <a 
               href="#" 
               onClick={handleScrollToTop}
-              className="text-sm text-primary hover:underline cursor-pointer"
+              className={cn(
+                buttonVariants({ variant: "default", size: "sm" }),
+                "text-white rounded-full group cursor-pointer"
+              )}
             >
-              Download Now &gt;
+              {siteConfig.cta}
             </a>
           </div>
         ))}
