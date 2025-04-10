@@ -84,11 +84,12 @@ export function BentoGrid() {
                 bentoItem.fullWidth && "sm:space-x-4"
               )}
             >
-              <img
-                src={bentoItem.imageSrc}
-                alt={bentoItem.imageAlt}
-                className="w-full h-64 sm:h-96 rounded-xl object-cover object-top"
-              />
+              <object
+                type="image/svg+xml"
+                data={bentoItem.imageSrc}
+                className="w-full h-64 sm:h-96 rounded-xl"
+                aria-label={bentoItem.imageAlt}
+              ></object>
             </div>
           </motion.div>
         ))}

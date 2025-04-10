@@ -72,11 +72,12 @@ export function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img 
-                src="/download-black.svg" 
-                alt="Download on the App Store" 
+              <object
+                type="image/svg+xml"
+                data="/download-black.svg"
                 className="h-full w-auto"
-              />
+                aria-label="Download on the App Store"
+              ></object>
             </motion.a>
             
             <motion.a

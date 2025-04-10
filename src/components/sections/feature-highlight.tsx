@@ -98,11 +98,12 @@ function Feature({
         </div>
       </motion.div>
       <div className="w-full lg:w-1/2">
-        <img
-          src={imageSrc}
-          alt={title}
+        <object
+          type="image/svg+xml"
+          data={imageSrc}
           className="w-full max-w-[300px] mx-auto"
-        />
+          aria-label={title}
+        ></object>
       </div>
     </motion.div>
   );
