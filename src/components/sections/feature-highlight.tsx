@@ -73,7 +73,7 @@ function Feature({
           >
             {title}
           </motion.h2>
-          <motion.p className="text-xl md:text-2xl" variants={itemVariants}>
+          <motion.p className="text-lg md:text-xl" variants={itemVariants}>
             {description}
           </motion.p>
           <motion.div variants={itemVariants}>
