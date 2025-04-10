@@ -75,16 +75,25 @@ export function Hero() {
               <img 
                 src="/download-black.svg" 
                 alt="Download on the App Store" 
-                className="h-full w-auto dark:hidden"
-              />
-              <img 
-                src="/download-white.svg" 
-                alt="Download on the App Store" 
-                className="h-full w-auto hidden dark:block"
+                className="h-full w-auto"
               />
             </motion.a>
             
-            {/* You can add Google Play badge here if needed */}
+            <motion.a
+              href="https://play.google.com/store/apps/details?id=com.mygameweather.app"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 1.2 }}
+              className="h-12"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img 
+                src="/GetItOnGooglePlay_Badge_Web_color_English.png" 
+                alt="Get it on Google Play" 
+                className="h-full w-auto"
+              />
+            </motion.a>
           </div>
         </div>
         <div className="flex flex-nowrap items-center justify-center gap-4 sm:gap-8 h-auto sm:h-[500px] select-none">
