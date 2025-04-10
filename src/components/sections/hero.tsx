@@ -72,12 +72,11 @@ export function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <object
-                type="image/svg+xml"
-                data="/download-black.svg"
+              <img
+                src="/download-black.svg"
+                alt="Download on the App Store"
                 className="h-full w-auto"
-                aria-label="Download on the App Store"
-              ></object>
+              />
             </motion.a>
             
             <motion.a
@@ -98,80 +97,51 @@ export function Hero() {
           </div>
         </div>
         <div className="flex flex-nowrap items-center justify-center gap-4 sm:gap-8 h-auto sm:h-[500px] select-none">
-          <motion.div
+          <motion.img
+            src="/MyGameWeather_Promo_Team_Search.svg"
+            alt="iPhone"
             initial={{ opacity: 0, x: -200 }}
             animate={{ opacity: 1, x: 0 }}
             style={{ y: y1 }}
             transition={{ duration: 1, delay: 1 }}
-            className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0 relative"
-          >
-            <object
-              type="image/svg+xml"
-              data="/MyGameWeather_Promo_Team_Search.svg"
-              className="w-full h-full"
-              aria-label="iPhone"
-            ></object>
-          </motion.div>
-          
-          <motion.div
+            className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0"
+          />
+          <motion.img
+            src="/MyGameWeather_Promo_Fixtures.svg"
+            alt="iPhone"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             style={{ y: y2 }}
             transition={{ duration: 1, delay: 1 }}
-            className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0 relative"
-          >
-            <object
-              type="image/svg+xml"
-              data="/MyGameWeather_Promo_Fixtures.svg"
-              className="w-full h-full"
-              aria-label="iPhone"
-            ></object>
-          </motion.div>
-          
-          <motion.div
+            className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0"
+          />
+          <motion.img
+            src="/MyGameWeather_Promo_Wind.svg"
+            alt="iPhone"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             style={{ y: y3 }}
             transition={{ duration: 1, delay: 1 }}
-            className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0 relative"
-          >
-            <object
-              type="image/svg+xml"
-              data="/MyGameWeather_Promo_Wind.svg"
-              className="w-full h-full"
-              aria-label="iPhone"
-            ></object>
-          </motion.div>
-          
-          <motion.div
+            className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0"
+          />
+          <motion.img
+            src="/MyGameWeather_Promo_Rain.svg"
+            alt="iPhone"
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             style={{ y: y4 }}
             transition={{ duration: 1, delay: 1 }}
-            className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0 relative"
-          >
-            <object
-              type="image/svg+xml"
-              data="/MyGameWeather_Promo_Rain.svg"
-              className="w-full h-full"
-              aria-label="iPhone"
-            ></object>
-          </motion.div>
-          
-          <motion.div
+            className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0"
+          />
+          <motion.img
+            src="/MyGameWeather_Promo_Profile.svg"
+            alt="iPhone"
             initial={{ opacity: 0, x: 200 }}
             animate={{ opacity: 1, x: 0 }}
             style={{ y: y5 }}
             transition={{ duration: 1, delay: 1 }}
-            className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0 relative"
-          >
-            <object
-              type="image/svg+xml"
-              data="/MyGameWeather_Promo_Profile.svg"
-              className="w-full h-full"
-              aria-label="iPhone"
-            ></object>
-          </motion.div>
+            className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0"
+          />
         </div>
       </main>
     </Section>

@@ -42,12 +42,11 @@ export function Benefits() {
             className="flex-shrink-0 w-[calc(90%-1rem)] md:w-1/3 lg:w-1/3 xl:w-1/4 snap-center md:snap-start select-none px-4"
           >
             <div className="h-[500px] relative rounded-xl overflow-hidden">
-              <object
-                type="image/svg+xml"
-                data={benefit.image}
-                className="absolute inset-0 w-full h-full object-cover transition-all duration-500 ease-out"
-                aria-label={benefit.text}
-              ></object>
+              <img
+                src={benefit.image}
+                alt={benefit.text}
+                className="absolute inset-0 w-full h-full object-cover transition-all duration-500 ease-out object-[0px_10px] hover:object-top"
+              />
               <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-muted to-transparent pointer-events-none" />
             </div>
             <div className="mt-4">
