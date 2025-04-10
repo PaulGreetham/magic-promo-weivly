@@ -41,11 +41,13 @@ export function Benefits() {
             key={benefit.id}
             className="flex-shrink-0 w-[calc(90%-1rem)] md:w-1/3 lg:w-1/3 xl:w-1/4 snap-center md:snap-start select-none px-4"
           >
-            <div className="h-[500px] relative rounded-xl overflow-hidden">
+            <div className="h-[500px] relative rounded-xl overflow-hidden phone-container">
               <picture>
                 <source 
                   media="(max-width: 768px)" 
-                  srcSet={`${benefit.image.replace('.svg', '.png')}`} 
+                  srcSet={benefit.image.endsWith('.svg') 
+                    ? benefit.image.replace('.svg', '.png') 
+                    : `${benefit.image}.png`} 
                 />
                 <source srcSet={benefit.image} />
                 <img

@@ -87,7 +87,9 @@ export function BentoGrid() {
               <picture>
                 <source 
                   media="(max-width: 768px)" 
-                  srcSet={`${bentoItem.imageSrc.replace('.svg', '.png')}`} 
+                  srcSet={bentoItem.imageSrc.endsWith('.svg') 
+                    ? bentoItem.imageSrc.replace('.svg', '.png') 
+                    : `${bentoItem.imageSrc}.png`} 
                 />
                 <source srcSet={bentoItem.imageSrc} />
                 <img

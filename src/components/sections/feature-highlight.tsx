@@ -97,11 +97,13 @@ function Feature({
           </motion.div>
         </div>
       </motion.div>
-      <div className="w-full lg:w-1/2">
+      <div className="w-full lg:w-1/2 phone-container">
         <picture>
           <source 
             media="(max-width: 768px)" 
-            srcSet={`${imageSrc.replace('.svg', '.png')}`} 
+            srcSet={imageSrc.endsWith('.svg') 
+              ? imageSrc.replace('.svg', '.png') 
+              : `${imageSrc}.png`} 
           />
           <source srcSet={imageSrc} />
           <img

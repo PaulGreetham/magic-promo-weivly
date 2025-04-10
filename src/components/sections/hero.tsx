@@ -103,31 +103,36 @@ export function Hero() {
             "/MyGameWeather_Promo_Wind", 
             "/MyGameWeather_Promo_Rain",
             "/MyGameWeather_Promo_Profile"
-          ].map((src, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, x: [-200, -100, 0, 100, 200][index] }}
-              animate={{ opacity: 1, x: 0 }}
-              style={{ y: [y1, y2, y3, y4, y5][index] }}
-              transition={{ duration: 1, delay: 1 }}
-              className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0 relative phone-container"
-            >
-              <picture>
-                {/* Mobile uses PNG for guaranteed quality */}
-                <source 
-                  media="(max-width: 768px)" 
-                  srcSet={`${src}.png`} 
-                />
-                {/* Desktop uses SVG */}
-                <source srcSet={`${src}.svg`} />
-                <img
-                  src={`${src}.svg`}
-                  alt="iPhone"
-                  className="w-full h-full object-contain mobile-svg-enhance"
-                />
-              </picture>
-            </motion.div>
-          ))}
+          ].map((src, index) => {
+            // Log path for debugging
+            console.log(`Checking image: ${src}.png exists?`);
+            
+            return (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: [-200, -100, 0, 100, 200][index] }}
+                animate={{ opacity: 1, x: 0 }}
+                style={{ y: [y1, y2, y3, y4, y5][index] }}
+                transition={{ duration: 1, delay: 1 }}
+                className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0 relative phone-container"
+              >
+                <picture>
+                  <source 
+                    media="(max-width: 768px)" 
+                    srcSet={`${src}.png`} 
+                    onError={() => console.error(`Failed to load: ${src}.png`)}
+                  />
+                  <source srcSet={`${src}.svg`} />
+                  <img
+                    src={`${src}.svg`}
+                    alt="iPhone"
+                    className="w-full h-full object-contain mobile-svg-enhance"
+                    onError={(e) => console.error(`Failed to load image: ${src}.svg`)}
+                  />
+                </picture>
+              </motion.div>
+            );
+          })}
         </div>
       </main>
     </Section>

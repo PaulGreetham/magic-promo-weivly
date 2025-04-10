@@ -52,6 +52,11 @@ export function FeatureScroll() {
             <source 
               media="(max-width: 768px)" 
               srcSet="/MyGameWeather_Promo_Weather_Info.png" 
+              onError={(e) => {
+                // Fall back to SVG if PNG fails to load
+                const target = e.target as HTMLSourceElement;
+                target.srcset = "/MyGameWeather_Promo_Weather_Info.svg";
+              }}
             />
             <source srcSet="/MyGameWeather_Promo_Weather_Info.svg" />
             <img
