@@ -9,12 +9,16 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
+import { Button } from "@/components/ui/button";
 
 export function Header() {
   const [isVisible, setIsVisible] = useState(true);
   const [addBorder, setAddBorder] = useState(false);
   const [isInitialLoad, setIsInitialLoad] = useState(true);
   const controls = useAnimation();
+  const { setTheme, theme } = useTheme();
 
   useEffect(() => {
     let lastScrollY = 0;
@@ -69,22 +73,34 @@ export function Header() {
               <Icons.logo className="w-auto h-7" />
               <span className="text-style-h2 uppercase tracking-wider pb-1 mt-2">My Game Weather</span>
             </Link>
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                const heroSection = document.getElementById('hero');
-                if (heroSection) {
-                  heroSection.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
-              className={cn(
-                buttonVariants({ variant: "default" }),
-                "h-8 py-1 lg:py-5 text-white rounded-full group cursor-pointer text-xs lg:text-base"
-              )}
-            >
-              {siteConfig.cta}
-            </a>
+            <div className="flex items-center gap-2">
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const heroSection = document.getElementById('hero');
+                  if (heroSection) {
+                    heroSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className={cn(
+                  buttonVariants({ variant: "default" }),
+                  "h-8 py-1 lg:py-5 text-white rounded-full group cursor-pointer text-xs lg:text-base"
+                )}
+              >
+                {siteConfig.cta}
+              </a>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-8 w-8"
+                onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+              >
+                <Sun className="h-6 w-6 dark:hidden" />
+                <Moon className="hidden h-6 w-6 dark:block" />
+                <span className="sr-only">Toggle theme</span>
+              </Button>
+            </div>
           </div>
           <motion.hr
             initial={{ opacity: 0 }}
