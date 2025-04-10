@@ -13,8 +13,9 @@ import { Testimonials } from "@/components/sections/testimonials";
 
 export default function Home() {
   return (
-    <main className="relative">
+    <>
       <Header />
+      <main>
       <Hero />
       <FeatureScroll />
       <FeatureHighlight />
@@ -25,7 +26,8 @@ export default function Home() {
       <Pricing />
       <FAQ />
       <CTA />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }
