@@ -171,7 +171,7 @@ export const siteConfig = {
       name: "Universal",
       href: "#",
       price: "€0",
-      period: "month",
+      period: "always",
       features: [
         "Access to 25,000+ teams",
         "Elite weather data",
@@ -180,7 +180,7 @@ export const siteConfig = {
         "Free notifications",
         "Pick your favourite team",
       ],
-      description: "Basic access",
+      description: "Full access",
       buttonText: "Start Free",
       isPopular: false,
     },
