@@ -29,6 +29,9 @@ export function BentoGrid() {
     useTransform(scrollYProgress, [0, 0.4, 0.6], [0, 0, 1], {
       ease: easeInOutCubic,
     }),
+    useTransform(scrollYProgress, [0, 0.5, 0.7], [0, 0, 1], {
+      ease: easeInOutCubic,
+    }),
   ];
 
   const yTransforms = [
@@ -42,6 +45,9 @@ export function BentoGrid() {
       ease: easeInOutCubic,
     }),
     useTransform(scrollYProgress, [0, 0.4, 0.6], [100, 100, 0], {
+      ease: easeInOutCubic,
+    }),
+    useTransform(scrollYProgress, [0, 0.5, 0.7], [100, 100, 0], {
       ease: easeInOutCubic,
     }),
   ];
