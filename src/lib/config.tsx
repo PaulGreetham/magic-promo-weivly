@@ -132,24 +132,34 @@ export const siteConfig = {
   benefits: [
     {
       id: 1,
-      text: "Save hours each week with AI-optimized scheduling.",
-      image: "/Device-6.png",
+      text: "Search from 25,000+ teams globally",
+      image: "/MyGameWeather_Promo_Global_Search.svg",
     },
     {
       id: 2,
-      text: "Reduce scheduling conflicts and double-bookings.",
-      image: "/Device-7.png",
+      text: "Choose from the team's next 5 fixtures",
+      image: "/MyGameWeather_Promo_Fixtures.svg",
     },
     {
       id: 3,
-      text: "Improve work-life balance with smart time allocation.",
-      image: "/Device-8.png",
+      text: "See advanced weather data visualizations",
+      image: "/MyGameWeather_Promo_Visualization.svg",
     },
     {
       id: 4,
-      text: "Increase productivity with AI-driven time management insights.",
-      image: "/Device-1.png",
+      text: "Get hourly insights from data sources",
+      image: "/MyGameWeather_Promo_All_Weather_Data.svg",
     },
+    {
+      id: 5,
+      text: "Sign up to receive notifications",
+      image: "/MyGameWeather_Promo_Profile.svg",
+    },
+    {
+      id: 6,
+      text: "Receive weather notifications 3 days in advance",
+      image: "/MyGameWeather_Promo_Notifications.svg",
+    }
   ],
   pricing: [
     {
