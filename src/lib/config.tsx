@@ -89,7 +89,23 @@ export const siteConfig = {
   ],
   bento: [
     {
-      title: "Send Weather Notifications",
+      title: "Match Time Display",
+      content:
+        "No scrolling needed! Easily see the match duration and kick off time for your favorite teams fixtures in the data sections.",
+      imageSrc: "/MyGameWeather_Promo_Match_Time_Highlight.svg",
+      imageAlt: "Team collaboration illustration",
+      fullWidth: false,
+    },
+    {
+      title: "Schedule Prompts",
+      content:
+        "If fixture weather data is not available yet, you can schedule a notification to get the weather for your favourite teams fixtures.",
+      imageSrc: "/MyGameWeather_Promo_No_Data_Available.svg",
+      imageAlt: "Time blocking illustration",
+      fullWidth: false,
+    },
+    {
+      title: "Receive Notifications",
       content:
         "Be prepared for all eventualities with weather notifications for your favorite teams 3 days in advance of the fixture. Notifications are always free.",
       imageSrc: "/MyGameWeather_Promo_Notifications.svg",
@@ -97,28 +113,20 @@ export const siteConfig = {
       fullWidth: true,
     },
     {
-      title: "Smart Time Blocking",
+      title: "Hourly Data Tables",
       content:
-        "Automatically block out time for focused work, breaks, and personal activities to maintain a balanced and productive schedule.",
-      imageSrc: "/Device-2.png",
-      imageAlt: "Time blocking illustration",
+        "Effortlessly see hourly weather data for your favorite teams fixture with detailed temp, feels like temp, wind speed and % chance of rain.",
+      imageSrc: "/MyGameWeather_Promo_Weather_Table.svg",
+      imageAlt: "Team collaboration illustration",
       fullWidth: false,
     },
     {
-      title: "Intelligent Reminders",
+      title: "Easy Search",
       content:
-        "Receive context-aware notifications that adapt to your schedule, ensuring you never miss important events or deadlines.",
-      imageSrc: "/Device-3.png",
+        "Save time by having your favourite team saved in the team search, so you can quickly find the weather for their next fixtures.",
+      imageSrc: "/MyGameWeather_Promo_Easy_Favourite_Search.svg",
       imageAlt: "Smart reminders illustration",
       fullWidth: false,
-    },
-    {
-      title: "Team Collaboration",
-      content:
-        "Effortlessly coordinate schedules with team members and clients, finding optimal meeting times across different time zones.",
-      imageSrc: "/Device-4.png",
-      imageAlt: "Team collaboration illustration",
-      fullWidth: true,
     },
   ],
   benefits: [
