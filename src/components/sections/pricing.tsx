@@ -6,6 +6,8 @@ import { siteConfig } from "@/lib/config";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { CheckIcon, ChevronRightIcon } from "lucide-react";
 import { useRef } from "react";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
 
 export function Pricing() {
   const ref = useRef(null);
@@ -17,12 +19,16 @@ export function Pricing() {
 
   const opacities = [
     useTransform(scrollYProgress, [0, 0.1, 0.3], [0, 0, 1]),
+    useTransform(scrollYProgress, [0, 0.15, 0.35], [0, 0, 1]),
     useTransform(scrollYProgress, [0, 0.2, 0.4], [0, 0, 1]),
+    useTransform(scrollYProgress, [0, 0.25, 0.45], [0, 0, 1]),
   ];
 
   const yTransforms = [
     useTransform(scrollYProgress, [0, 0.1, 0.3], [100, 100, 0]),
+    useTransform(scrollYProgress, [0, 0.15, 0.35], [100, 100, 0]),
     useTransform(scrollYProgress, [0, 0.2, 0.4], [100, 100, 0]),
+    useTransform(scrollYProgress, [0, 0.25, 0.45], [100, 100, 0]),
   ];
 
   return (
@@ -33,12 +39,12 @@ export function Pricing() {
       className="container px-10"
       ref={ref}
     >
-      <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto py-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto py-10">
         {siteConfig.pricing.map((plan, index) => (
           <motion.div
             key={plan.name}
             style={{ opacity: opacities[index], y: yTransforms[index] }}
-            className="bg-muted/60 p-6 rounded-3xl grid grid-rows-[auto_auto_1fr_auto]"
+            className="bg-card shadow-lg p-6 rounded-3xl grid grid-rows-[auto_auto_auto_1fr_auto] border border-border dark:border-white/10"
           >
             <h2 className="text-2xl font-semibold mb-4">{plan.name}</h2>
             <div className="text-4xl font-bold text-primary mb-2">
@@ -59,14 +65,20 @@ export function Pricing() {
                 </div>
               ))}
             </div>
-            <Button
-              variant={"default"}
-              size="sm"
-              className="rounded-full text-white"
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                const heroSection = document.getElementById('hero');
+                if (heroSection) {
+                  heroSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className="bg-primary hover:bg-primary/90 text-white rounded-full px-4 py-3 font-medium flex items-center justify-center gap-1 group transition-all duration-300 ease-out"
             >
-              Get Started
-              <ChevronRightIcon className="w-4 h-4 ml-1" />
-            </Button>
+              Download Now
+              <ChevronRightIcon className="w-4 h-4 ml-1 transition-all duration-300 ease-out group-hover:translate-x-1" />
+            </a>
           </motion.div>
         ))}
       </div>
