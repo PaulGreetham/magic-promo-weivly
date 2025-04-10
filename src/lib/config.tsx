@@ -294,203 +294,73 @@ export const siteConfig = {
   testimonials: [
     {
       id: 1,
-      text: "Cal AI has revolutionized how I manage my time. It&apos;s like having a personal assistant.",
-      name: "Alice Johnson",
-      role: "Freelance Designer",
-      image:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D",
+      text: "This app is a game changer for match day planning - banging!",
+      name: "Bradford1972",
     },
     {
       id: 2,
-      text: "The AI-powered scheduling has significantly reduced conflicts in our team&apos;s calendar.",
-      name: "Bob Brown",
-      role: "Project Manager, Tech Innovations",
-      image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBvcnRyYWl0fGVufDB8fDB8fHww",
+      text: "The hourly weather forecasts have saved me from getting soaked at games so many times. I check MGW before every away day now.",
+      name: "DannyToy",
     },
     {
       id: 3,
-      text: "The smart time blocking feature has helped me maintain a better work-life balance.",
-      name: "Charlie Davis",
-      role: "Entrepreneur",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBvcnRyYWl0fGVufDB8fDB8fHww",
+      text: "Being able to save my local club makes checking the weather easy.",
+      name: "Hull Mark",
     },
     {
       id: 4,
-      text: "Cal AI's predictive planning has made my workweek so much more efficient.",
-      name: "Diana Evans",
-      role: "Marketing Director",
-      image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHBvcnRyYWl0fGVufDB8fDB8fHww",
+      text: "I love the detailed temperature readings and wind information. It helps me decide exactly what to wear to matches.",
+      name: "Steveie",
     },
     {
       id: 5,
-      text: "The team collaboration features have streamlined our project management process.",
-      name: "Ethan Ford",
-      role: "Software Team Lead",
-      image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHBvcnRyYWl0fGVufDB8fDB8fHww",
+      text: "The rain predictions are spot on! No more surprise downpours.",
+      name: "Utrecht87",
     },
     {
       id: 6,
-      text: "Cal AI has helped me balance my work and personal commitments effortlessly.",
-      name: "Fiona Grant",
-      role: "HR Manager",
-      image:
-        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fHBvcnRyYWl0fGVufDB8fDB8fHww",
+      text: "I follow teams across different countries, and having all this weather data in one place is brilliant. The global coverage is impressive.",
+      name: "Sara",
     },
     {
       id: 7,
-      text: "The AI-driven insights have helped me optimize my daily routines significantly.",
-      name: "George Harris",
-      role: "Productivity Coach",
-      image:
-        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fHBvcnRyYWl0fGVufDB8fDB8fHww",
+      text: "The animations make it so easy to understand the weather at a glance.",
+      name: "Ryan",
     },
     {
       id: 8,
-      text: "Cal AI's integration with my other tools has created a seamless workflow.",
-      name: "Hannah Irving",
-      role: "Digital Nomad",
-      image:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fHBvcnRyYWl0fGVufDB8fDB8fHww",
+      text: "The hourly breakdown is incredibly useful for knowing when we might need to go to the pub or not :)",
+      name: "Emma88",
     },
     {
       id: 9,
-      text: "The smart reminders have drastically reduced my missed appointments.",
-      name: "Ian Johnson",
-      role: "Sales Executive",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fHBvcnRyYWl0fGVufDB8fDB8fHww",
+      text: "Never been caught in the rain at a match since downloading this app. The rain probability feature is brilliant!",
+      name: "Chris",
     },
     {
       id: 10,
-      text: "Cal AI's ability to learn my preferences has made scheduling a breeze.",
-      name: "Julia Kim",
-      role: "Researcher",
-      image:
-        "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fHBvcnRyYWl0fGVufDB8fDB8fHww",
+      text: "Can't beleive I can see fixtures for my non-league team!!!",
+      name: "Gary108",
     },
     {
       id: 11,
-      text: "The AI-suggested meeting times have improved our team's productivity.",
-      name: "Kevin Lee",
-      role: "Operations Manager",
-      image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fHBvcnRyYWl0fGVufDB8fDB8fHww",
+      text: "The temperature data is spot on. Really helps when deciding what layers to bring to evening matches.",
+      name: "Alex",
     },
     {
       id: 12,
-      text: "Cal AI's travel time estimations have made my commute planning much easier.",
-      name: "Laura Martinez",
-      role: "Urban Planner",
-      image:
-        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fHBvcnRyYWl0fGVufDB8fDB8fHww",
+      text: "I travel all over Europe supporting my team - having accurate weather data for away fixtures has made packing so much easier!",
+      name: "Nathan",
     },
     {
       id: 13,
-      text: "The AI-powered task prioritization has helped me focus on what's truly important.",
-      name: "Michael Nelson",
-      role: "Entrepreneur",
-      image:
-        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzZ8fHBvcnRyYWl0fGVufDB8fDB8fHww",
+      text: "Great app! Perfect for quick checks before heading to the stadium.",
+      name: "Maya",
     },
     {
       id: 14,
-      text: "Cal AI's habit tracking feature has helped me build better routines.",
-      name: "Natalie Owens",
-      role: "Personal Trainer",
-      image:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODB8fHBvcnRyYWl0fGVufDB8fDB8fHww",
-    },
-    {
-      id: 15,
-      text: "The AI suggestions for breaks have improved my work-from-home productivity.",
-      name: "Oscar Parker",
-      role: "Remote Worker",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODR8fHBvcnRyYWl0fGVufDB8fDB8fHww",
-    },
-    {
-      id: 16,
-      text: "Cal AI's integration with my smart home devices has streamlined my mornings.",
-      name: "Patricia Quinn",
-      role: "Tech Enthusiast",
-      image:
-        "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fHBvcnRyYWl0fGVufDB8fDB8fHww",
-    },
-    {
-      id: 17,
-      text: "The AI-driven energy level tracking has helped me schedule tasks more effectively.",
-      name: "Quincy Roberts",
-      role: "Productivity Consultant",
-      image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTJ8fHBvcnRyYWl0fGVufDB8fDB8fHww",
-    },
-    {
-      id: 18,
-      text: "Cal AI's goal-setting features have kept me accountable and on track.",
-      name: "Rachel Stevens",
-      role: "Life Coach",
-      image:
-        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTZ8fHBvcnRyYWl0fGVufDB8fDB8fHww",
-    },
-    {
-      id: 19,
-      text: "The AI-suggested focus times have dramatically improved my deep work sessions.",
-      name: "Samuel Thompson",
-      role: "Writer",
-      image:
-        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAwfHxwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D",
-    },
-    {
-      id: 20,
-      text: "Cal AI's team availability feature has made cross-timezone scheduling effortless.",
-      name: "Tina Upton",
-      role: "Global Project Coordinator",
-      image:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA0fHxwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D",
-    },
-    {
-      id: 21,
-      text: "The AI-powered meeting summarizer has saved me hours of note-taking.",
-      name: "Ulysses Vaughn",
-      role: "Executive Assistant",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA4fHxwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D",
-    },
-    {
-      id: 22,
-      text: "Cal AI's personalized productivity insights have been eye-opening.",
-      name: "Victoria White",
-      role: "Business Analyst",
-      image:
-        "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEyfHxwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D",
-    },
-    {
-      id: 23,
-      text: "The AI-suggested networking opportunities have expanded my professional circle.",
-      name: "William Xavier",
-      role: "Startup Founder",
-      image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE2fHxwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D",
-    },
-    {
-      id: 24,
-      text: "Cal AI's integration with my fitness tracker has helped me maintain a healthier lifestyle.",
-      name: "Xena Yates",
-      role: "Wellness Coach",
-      image:
-        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIwfHxwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D",
-    },
-    {
-      id: 25,
-      text: "The AI-driven project timeline suggestions have kept our team ahead of deadlines.",
-      name: "Yannick Zimmerman",
-      role: "Project Manager",
-      image:
-        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI0fHxwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D",
+      text: "Brilliant that I don't have to use loads of different ways to figure out where the away ground is.",
+      name: "Ben",
     },
   ],
 };

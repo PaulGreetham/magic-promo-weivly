@@ -9,40 +9,28 @@ import { ChevronRight } from "lucide-react";
 
 const reviews = [
   {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://avatar.vercel.sh/jack",
+    name: "Michael",
+    body: "The hourly weather tables are fantastic for planning my match day outfits. So detailed!",
   },
   {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://avatar.vercel.sh/jill",
+    name: "Sarah",
+    body: "Being able to save my favorite team makes checking weather for upcoming fixtures so quick and easy. I use it before every home game!",
   },
   {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/john",
+    name: "David",
+    body: "The weather visualizations are incredibly helpful. I can see at a glance if I need to bring rain gear.",
   },
   {
-    name: "Jane",
-    username: "@jane",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jane",
+    name: "Emma",
+    body: "Having access to 25,000+ teams globally means I can check weather for any match I'm interested in. As someone who follows leagues across Europe, this is a total game-changer for planning viewing parties.",
   },
   {
-    name: "Jenny",
-    username: "@jenny",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jenny",
+    name: "Thomas",
+    body: "The hourly insights are spot on - I was able to avoid a downpour during the second half last weekend!",
   },
   {
-    name: "James",
-    username: "@james",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/james",
+    name: "Olivia",
+    body: "Weather notifications are a game changer. No more checking the app constantly before match day. MGW tells me exactly when conditions change so I can plan accordingly.",
   },
 ];
 
@@ -50,14 +38,10 @@ const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
 
 const ReviewCard = ({
-  img,
   name,
-  username,
   body,
 }: {
-  img: string;
   name: string;
-  username: string;
   body: string;
 }) => {
   return (
@@ -70,14 +54,10 @@ const ReviewCard = ({
         "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
       )}
     >
-      <div className="flex flex-row items-center gap-2">
-        <img className="rounded-full" width="32" height="32" alt="" src={img} />
-        <div className="flex flex-col">
-          <figcaption className="text-sm font-medium dark:text-white">
-            {name}
-          </figcaption>
-          <p className="text-xs font-medium dark:text-white/40">{username}</p>
-        </div>
+      <div className="flex flex-col">
+        <figcaption className="text-sm font-medium dark:text-white">
+          {name}
+        </figcaption>
       </div>
       <blockquote className="mt-2 text-sm">{body}</blockquote>
     </figure>
@@ -100,7 +80,7 @@ export function CTA() {
           <div className="absolute rotate-[35deg]">
             <Marquee pauseOnHover className="[--duration:20s]" repeat={3}>
               {firstRow.map((review) => (
-                <ReviewCard key={review.username} {...review} />
+                <ReviewCard key={review.name} name={review.name} body={review.body} />
               ))}
             </Marquee>
             <Marquee
@@ -110,12 +90,12 @@ export function CTA() {
               repeat={3}
             >
               {secondRow.map((review) => (
-                <ReviewCard key={review.username} {...review} />
+                <ReviewCard key={review.name} name={review.name} body={review.body} />
               ))}
             </Marquee>
             <Marquee pauseOnHover className="[--duration:20s]" repeat={3}>
               {firstRow.map((review) => (
-                <ReviewCard key={review.username} {...review} />
+                <ReviewCard key={review.name} name={review.name} body={review.body} />
               ))}
             </Marquee>
             <Marquee
@@ -125,12 +105,12 @@ export function CTA() {
               repeat={3}
             >
               {secondRow.map((review) => (
-                <ReviewCard key={review.username} {...review} />
+                <ReviewCard key={review.name} name={review.name} body={review.body} />
               ))}
             </Marquee>
             <Marquee pauseOnHover className="[--duration:20s]" repeat={3}>
               {firstRow.map((review) => (
-                <ReviewCard key={review.username} {...review} />
+                <ReviewCard key={review.name} name={review.name} body={review.body} />
               ))}
             </Marquee>
             <Marquee
@@ -140,7 +120,7 @@ export function CTA() {
               repeat={3}
             >
               {secondRow.map((review) => (
-                <ReviewCard key={review.username} {...review} />
+                <ReviewCard key={review.name} name={review.name} body={review.body} />
               ))}
             </Marquee>
           </div>

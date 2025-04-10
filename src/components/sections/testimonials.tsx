@@ -1,5 +1,6 @@
 import { Section } from "@/components/section";
 import { siteConfig } from "@/lib/config";
+import { cn } from "@/lib/utils";
 
 export function Testimonials() {
   return (
@@ -12,27 +13,17 @@ export function Testimonials() {
         {siteConfig.testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="bg-muted/60 overflow-hidden rounded-3xl flex flex-col h-fit"
+            className="overflow-hidden rounded-3xl flex flex-col h-fit shadow-sm border border-border dark:border-white/10 bg-card"
             style={{
               gridRow: `span ${Math.floor(testimonial.text.length / 50) + 1}`,
             }}
           >
-            <div className="px-4 py-5 sm:p-6 flex-grow">
-              <div className="flex items-center mb-4">
-                <img
-                  className="h-10 w-10 rounded-full object-cover"
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                />
-                <div className="ml-3">
-                  <h3 className="text-lg font-medium text-foreground">
-                    {testimonial.name}
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    {testimonial.role}
-                  </p>
-                </div>
-              </div>
+            <div className="bg-primary px-4 py-3">
+              <h3 className="text-lg font-medium text-white">
+                {testimonial.name}
+              </h3>
+            </div>
+            <div className="px-4 py-4 sm:p-6 flex-grow">
               <p className="text-foreground">{testimonial.text}</p>
             </div>
           </div>
