@@ -59,7 +59,7 @@ export const siteConfig = {
     },
     {
       name: "Notifications",
-      description: "Receive weather notifications 3 days in advance for your favorite teams' fixtures.",
+      description: "Receive weather notifications 3 days in advance for your favorite teams&apos; fixtures.",
       icon: <BellIcon className="h-6 w-6" />,
     },
     {
