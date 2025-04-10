@@ -97,15 +97,19 @@ export function Hero() {
           </div>
         </div>
         <div className="flex flex-nowrap items-center justify-center gap-4 sm:gap-8 h-auto sm:h-[500px] select-none">
-          <motion.img
-            src="/MyGameWeather_Promo_Team_Search.svg"
-            alt="iPhone"
+          <motion.div
             initial={{ opacity: 0, x: -200 }}
             animate={{ opacity: 1, x: 0 }}
             style={{ y: y1 }}
             transition={{ duration: 1, delay: 1 }}
-            className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0"
-          />
+            className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0 mobile-svg-container"
+          >
+            <img
+              src="/MyGameWeather_Promo_Team_Search.svg"
+              alt="iPhone"
+              className="w-full h-full object-contain"
+            />
+          </motion.div>
           <motion.img
             src="/MyGameWeather_Promo_Fixtures.svg"
             alt="iPhone"

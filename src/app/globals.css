@@ -199,3 +199,20 @@ img[src$=".svg"] {
   image-rendering: optimizeQuality;
   shape-rendering: geometricPrecision;
 }
+
+/* Mobile-specific SVG fixes */
+@media screen and (max-width: 768px) {
+  img[src$=".svg"] {
+    transform: translateZ(0); /* Forces GPU rendering */
+    backface-visibility: hidden; /* Prevents rendering artifacts */
+    -webkit-font-smoothing: subpixel-antialiased; /* Better text rendering */
+  }
+}
+
+/* Special treatment for the most critical SVGs */
+.mobile-svg-container img {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  filter: brightness(0.99); /* This tiny filter change forces a better rendering path */
+  will-change: transform; /* Hints to the browser to optimize rendering */
+}
