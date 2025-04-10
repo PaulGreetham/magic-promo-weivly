@@ -98,11 +98,11 @@ export function Hero() {
         </div>
         <div className="flex flex-nowrap items-center justify-center gap-4 sm:gap-8 h-auto sm:h-[500px] select-none">
           {[
-            "/MyGameWeather_Promo_Team_Search.svg",
-            "/MyGameWeather_Promo_Fixtures.svg",
-            "/MyGameWeather_Promo_Wind.svg", 
-            "/MyGameWeather_Promo_Rain.svg",
-            "/MyGameWeather_Promo_Profile.svg"
+            "/MyGameWeather_Promo_Team_Search",
+            "/MyGameWeather_Promo_Fixtures",
+            "/MyGameWeather_Promo_Wind", 
+            "/MyGameWeather_Promo_Rain",
+            "/MyGameWeather_Promo_Profile"
           ].map((src, index) => (
             <motion.div
               key={index}
@@ -112,11 +112,20 @@ export function Hero() {
               transition={{ duration: 1, delay: 1 }}
               className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0 relative phone-container"
             >
-              <img
-                src={src}
-                alt="iPhone"
-                className="w-full h-full object-contain mobile-svg-enhance"
-              />
+              <picture>
+                {/* Mobile uses PNG for guaranteed quality */}
+                <source 
+                  media="(max-width: 768px)" 
+                  srcSet={`${src}.png`} 
+                />
+                {/* Desktop uses SVG */}
+                <source srcSet={`${src}.svg`} />
+                <img
+                  src={`${src}.svg`}
+                  alt="iPhone"
+                  className="w-full h-full object-contain mobile-svg-enhance"
+                />
+              </picture>
             </motion.div>
           ))}
         </div>

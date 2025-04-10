@@ -194,55 +194,50 @@
   }
 }
 
-/* Mobile SVG enhancements */
+/* Replace the current mobile SVG enhancement CSS with this improved version */
 .mobile-svg-enhance {
+  /* Basic rendering improvements */
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-font-smoothing: subpixel-antialiased;
+  
+  /* Force hardware acceleration */
+  will-change: transform;
+  
+  /* Top-tier image rendering */
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
+  
+  /* Fix transparency */
+  background-color: transparent !important;
 }
 
-/* Extra crisp rendering on mobile devices */
+/* Special mobile-specific enhancements */
 @media screen and (max-width: 768px) {
   .mobile-svg-enhance {
-    filter: blur(0);
-    transform: scale(1.01); /* Slight scaling to force better rendering */
-  }
-}
-
-/* Add these SVG enhancement rules to your globals.css */
-@media screen and (max-width: 768px) {
-  /* Class for SVG objects */
-  .svg-enhanced {
-    transform: translateZ(0);
-    backface-visibility: hidden;
-    filter: none !important;
+    /* Force pixel-perfect rendering */
+    transform: translateZ(0) scale(1.000001); /* Fractional scale to trigger rendering pipeline */
+    filter: contrast(1.01); /* Slight contrast adjustment forces better rendering */
+    
+    /* Target Chrome and Safari specifically */
+    @supports (-webkit-appearance:none) {
+      image-rendering: pixelated;
+      transform: translate3d(0,0,0) scale(1.000001);
+    }
   }
   
-  /* Force browser to render SVGs at high quality */
-  [type="image/svg+xml"] {
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
+  /* Fix any container backgrounds */
+  .phone-container {
+    background-color: transparent !important;
+    overflow: visible !important;
   }
 }
 
-/* Add this to your CSS */
-.mobile-svg-enhance,
-object[type="image/svg+xml"] {
-  background-color: transparent !important; /* Forces transparency */
-}
-
-/* Target specifically the problematic iPhone mockups */
+/* Special targeting for phone mockups */
 [src*="MyGameWeather_Promo_"] {
-  background-color: transparent !important;
-  border-radius: 0; /* Remove border radius */
-}
-
-/* Add this new rule to make the phone container blend with page background */
-.phone-container {
-  background-color: transparent !important;
-  overflow: visible !important; /* Allow the content to flow outside the container */
+  /* Force SVG quality */
+  vector-effect: non-scaling-stroke;
+  shape-rendering: geometricPrecision;
 }
