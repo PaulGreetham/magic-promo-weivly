@@ -98,11 +98,18 @@ function Feature({
         </div>
       </motion.div>
       <div className="w-full lg:w-1/2">
-        <img
-          src={imageSrc}
-          alt={title}
-          className="w-full max-w-[300px] mx-auto mobile-svg-enhance"
-        />
+        <picture>
+          <source 
+            media="(max-width: 768px)" 
+            srcSet={`${imageSrc.replace('.svg', '.png')}`} 
+          />
+          <source srcSet={imageSrc} />
+          <img
+            src={imageSrc}
+            alt={title}
+            className="w-full max-w-[300px] mx-auto mobile-svg-enhance"
+          />
+        </picture>
       </div>
     </motion.div>
   );
