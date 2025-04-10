@@ -45,7 +45,7 @@ export function Benefits() {
               <img
                 src={benefit.image}
                 alt={benefit.text}
-                className="absolute inset-0 w-full h-full object-cover transition-all duration-500 ease-out object-[0px_10px] hover:object-top"
+                className="absolute inset-0 w-full h-full object-cover transition-all duration-500 ease-out object-[0px_10px] hover:object-top mobile-svg-enhance"
               />
               <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-muted to-transparent pointer-events-none" />
             </div>

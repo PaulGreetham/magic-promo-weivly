@@ -87,7 +87,7 @@ export function BentoGrid() {
               <img
                 src={bentoItem.imageSrc}
                 alt={bentoItem.imageAlt}
-                className="w-full h-64 sm:h-96 rounded-xl object-cover object-top"
+                className="w-full h-64 sm:h-96 rounded-xl object-cover object-top mobile-svg-enhance"
               />
             </div>
           </motion.div>

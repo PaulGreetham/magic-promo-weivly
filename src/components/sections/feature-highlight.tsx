@@ -101,7 +101,7 @@ function Feature({
         <img
           src={imageSrc}
           alt={title}
-          className="w-full max-w-[300px] mx-auto"
+          className="w-full max-w-[300px] mx-auto mobile-svg-enhance"
         />
       </div>
     </motion.div>

@@ -43,27 +43,43 @@ export function FeatureScroll() {
       className="container px-4 sm:px-10"
     >
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mx-auto select-none">
-        <motion.img
+        <motion.div
           ref={phone1Ref}
-          src="/MyGameWeather_Promo_Weather_Info.svg"
-          alt="iPhone 1"
-          className="w-full h-auto -z-10 max-w-[250px] sm:max-w-[300px] mx-auto"
           style={{ y: y1 }}
-        />
-        <motion.img
+          className="w-full h-auto -z-10 max-w-[250px] sm:max-w-[300px] mx-auto"
+        >
+          <img
+            src="/MyGameWeather_Promo_Weather_Info.svg"
+            alt="iPhone 1"
+            className="w-full h-full object-contain mobile-svg-enhance"
+          />
+        </motion.div>
+        
+        <motion.div
           ref={phone2Ref}
-          src="/MyGameWeather_Promo_Pressure.svg"
-          alt="iPhone 2"
-          className="w-full h-auto -z-10 max-w-[250px] sm:max-w-[300px] mx-auto"
           style={{ y: y2 }}
-        />
-        <motion.img
-          ref={phone3Ref}
-          src="/MyGameWeather_Promo_All_Weather_Data.svg"
-          alt="iPhone 3"
           className="w-full h-auto -z-10 max-w-[250px] sm:max-w-[300px] mx-auto"
+        >
+          <object
+            type="image/svg+xml"
+            data="/MyGameWeather_Promo_Pressure.svg"
+            className="w-full h-full"
+            aria-label="iPhone 2"
+          ></object>
+        </motion.div>
+        
+        <motion.div
+          ref={phone3Ref}
           style={{ y: y3 }}
-        />
+          className="w-full h-auto -z-10 max-w-[250px] sm:max-w-[300px] mx-auto"
+        >
+          <object
+            type="image/svg+xml"
+            data="/MyGameWeather_Promo_All_Weather_Data.svg"
+            className="w-full h-full"
+            aria-label="iPhone 3"
+          ></object>
+        </motion.div>
       </div>
     </Section>
   );

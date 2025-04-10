@@ -194,25 +194,21 @@
   }
 }
 
-/* Make sure to keep this CSS rule to enhance SVG quality */
-img[src$=".svg"] {
-  image-rendering: optimizeQuality;
-  shape-rendering: geometricPrecision;
-}
-
-/* Mobile-specific SVG fixes */
-@media screen and (max-width: 768px) {
-  img[src$=".svg"] {
-    transform: translateZ(0); /* Forces GPU rendering */
-    backface-visibility: hidden; /* Prevents rendering artifacts */
-    -webkit-font-smoothing: subpixel-antialiased; /* Better text rendering */
-  }
-}
-
-/* Special treatment for the most critical SVGs */
-.mobile-svg-container img {
+/* Mobile SVG enhancements */
+.mobile-svg-enhance {
+  -webkit-transform: translateZ(0);
   transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  filter: brightness(0.99); /* This tiny filter change forces a better rendering path */
-  will-change: transform; /* Hints to the browser to optimize rendering */
+  -webkit-font-smoothing: subpixel-antialiased;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Extra crisp rendering on mobile devices */
+@media screen and (max-width: 768px) {
+  .mobile-svg-enhance {
+    filter: blur(0);
+    transform: scale(1.01); /* Slight scaling to force better rendering */
+  }
 }
