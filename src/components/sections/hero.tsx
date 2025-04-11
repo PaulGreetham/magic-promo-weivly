@@ -5,6 +5,7 @@ import { Section } from "@/components/section";
 import { easeInOutCubic } from "@/lib/animation";
 import { siteConfig } from "@/lib/config";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { useState, useEffect } from "react";
 
 export function Hero() {
   const { scrollY } = useScroll({
@@ -15,17 +16,43 @@ export function Hero() {
   const y3 = useTransform(scrollY, [0, 300], [0, 0]);
   const y4 = useTransform(scrollY, [0, 300], [50, 0]);
   const y5 = useTransform(scrollY, [0, 300], [100, 0]);
+  
+  const [isMobile, setIsMobile] = useState(false);
+  
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => {
+      window.removeEventListener('resize', checkMobile);
+    };
+  }, []);
 
   return (
     <Section id="hero" className="min-h-[100vh] w-full overflow-hidden">
       <main className="mx-auto pt-16 sm:pt-24 md:pt-32 text-center relative px-4">
         <div className="relative">
           <motion.div
-            initial={{ scale: 4.5, height: "80vh" }}
+            initial={{ 
+              scale: isMobile ? 2.5 : 4.5, 
+              height: isMobile ? "50vh" : "80vh"
+            }}
             animate={{ scale: 1, height: "10vh" }}
             transition={{
-              scale: { delay: 0, duration: 1.8, ease: easeInOutCubic },
-              height: { delay: 0, duration: 1.8, ease: easeInOutCubic },
+              scale: { 
+                delay: 0, 
+                duration: isMobile ? 1.2 : 1.8, 
+                ease: easeInOutCubic 
+              },
+              height: { 
+                delay: 0, 
+                duration: isMobile ? 1.2 : 1.8, 
+                ease: easeInOutCubic 
+              },
             }}
             className="mb-16 relative z-20"
             style={{ transformOrigin: "top" }}
@@ -34,7 +61,7 @@ export function Hero() {
               <img
                 src="/logo.png"
                 alt="MGW Logo"
-                // className="w-auto h-[60px] mobile-svg-enhance"
+                className="w-auto h-[60px] mobile-svg-enhance"
               />
             </div>
           </motion.div>
