@@ -80,19 +80,22 @@ export function BentoGrid() {
             </div>
             <div
               className={cn(
-                "flex justify-center",
+                "flex justify-center overflow-hidden rounded-xl h-64 sm:h-96",
                 bentoItem.fullWidth && "sm:space-x-4"
               )}
             >
-              <source 
-                media="(max-width: 768px)" 
-                srcSet={`${bentoItem.imageSrc.replace('.svg', '.png')}`} 
-              />
-              <img
-                src={bentoItem.imageSrc}
-                alt={bentoItem.imageAlt}
-                className="w-full h-64 sm:h-96 rounded-xl object-cover object-top"
-              />
+              <picture className="w-full h-full">
+                <source 
+                  media="(max-width: 768px)" 
+                  srcSet={`${bentoItem.imageSrc.replace('.svg', '.png')}`} 
+                />
+                <source srcSet={bentoItem.imageSrc} />
+                <img
+                  src={bentoItem.imageSrc}
+                  alt={bentoItem.imageAlt}
+                  className="w-full h-full object-cover object-top mobile-svg-enhance"
+                />
+              </picture>
             </div>
           </motion.div>
         ))}
