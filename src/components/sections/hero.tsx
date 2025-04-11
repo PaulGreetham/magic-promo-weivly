@@ -100,12 +100,19 @@ export function Hero() {
           {[
             "/MyGameWeather_Promo_Team_Search",
             "/MyGameWeather_Promo_Fixtures",
-            "/MyGameWeather_Promo_Wind", 
+            {
+              png: "/MyGameWeather_Promo_Wind.png", 
+              svg: "/MyGameWeather_Promo_Wind.svg",
+              fallback: "/placeholder.png"
+            }, 
             "/MyGameWeather_Promo_Rain",
             "/MyGameWeather_Promo_Profile"
-          ].map((src, index) => {
-            // Log path for debugging
-            console.log(`Checking image: ${src}.png exists?`);
+          ].map((item, index) => {
+            // Handle both string paths and object paths
+            const src = typeof item === 'string' ? item : item.svg;
+            const pngSrc = typeof item === 'string' ? `${item}.png` : item.png;
+            const svgSrc = typeof item === 'string' ? `${item}.svg` : item.svg;
+            const fallbackSrc = typeof item === 'string' ? "/placeholder.png" : (item.fallback || "/placeholder.png");
             
             return (
               <motion.div
@@ -117,17 +124,16 @@ export function Hero() {
                 className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0 relative phone-container"
               >
                 <picture>
-                  <source 
-                    media="(max-width: 768px)" 
-                    srcSet={`${src}.png`} 
-                    onError={() => console.error(`Failed to load: ${src}.png`)}
-                  />
-                  <source srcSet={`${src}.svg`} />
+                  <source media="(max-width: 768px)" srcSet={pngSrc} />
+                  <source srcSet={svgSrc} />
                   <img
-                    src={`${src}.svg`}
-                    alt="iPhone"
+                    src={svgSrc}
+                    alt={`iPhone screenshot ${index + 1}`}
                     className="w-full h-full object-contain mobile-svg-enhance"
-                    onError={(e) => console.error(`Failed to load image: ${src}.svg`)}
+                    onError={(e) => {
+                      console.error(`Failed to load image: ${svgSrc}`);
+                      e.currentTarget.src = fallbackSrc;
+                    }}
                   />
                 </picture>
               </motion.div>
