@@ -84,18 +84,15 @@ export function BentoGrid() {
                 bentoItem.fullWidth && "sm:space-x-4"
               )}
             >
-              <picture>
-                <source 
-                  media="(max-width: 768px)" 
-                  srcSet={`${bentoItem.imageSrc.replace('.svg', '.png')}`} 
-                />
-                <source srcSet={bentoItem.imageSrc} />
-                <img
-                  src={bentoItem.imageSrc}
-                  alt={bentoItem.imageAlt}
-                  className="w-full h-64 sm:h-96 rounded-xl object-cover object-top mobile-svg-enhance"
-                />
-              </picture>
+              <source 
+                media="(max-width: 768px)" 
+                srcSet={`${bentoItem.imageSrc.replace('.svg', '.png')}`} 
+              />
+              <img
+                src={bentoItem.imageSrc}
+                alt={bentoItem.imageAlt}
+                className="w-full h-64 sm:h-96 rounded-xl object-cover object-top"
+              />
             </div>
           </motion.div>
         ))}
