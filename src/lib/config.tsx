@@ -157,7 +157,7 @@ export const siteConfig = {
     },
     {
       id: 5,
-      text: "Sign up to receive notifications",
+      text: "Create profile",
       image: "/MyGameWeather_Promo_Profile.svg",
     },
     {

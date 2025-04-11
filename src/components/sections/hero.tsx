@@ -30,19 +30,15 @@ export function Hero() {
             className="mb-16 relative z-20"
             style={{ transformOrigin: "top" }}
           >
-            <div className="bg-primary text-white text-xl font-bold p-3 h-20 w-20 flex items-center justify-center rounded-3xl mx-auto shadow-md">
-              <picture className="w-auto h-[60px]">
-                <source 
-                  media="(max-width: 768px)" 
-                  srcSet="/logo.png"
-                />
-                <source srcSet="/logo.svg" />
-                <img
-                  src="/logo.svg"
-                  alt="MGW Logo"
-                  className="w-auto h-[60px] mobile-svg-enhance"
-                />
-              </picture>
+            <div className="bg-primary text-white text-xl font-bold p-2 h-20 w-20 flex items-center justify-center rounded-3xl mx-auto shadow-md">
+              <img
+                src="/logo.png"
+                alt="MGW Logo"
+                className="w-16 h-16 object-contain"
+                style={{
+                  imageRendering: '-webkit-optimize-contrast'
+                }}
+              />
             </div>
           </motion.div>
           <motion.div
