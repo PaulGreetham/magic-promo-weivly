@@ -34,10 +34,7 @@ export function Hero() {
               <img
                 src="/logo.png"
                 alt="MGW Logo"
-                className="w-16 h-16 object-contain"
-                style={{
-                  imageRendering: '-webkit-optimize-contrast'
-                }}
+                // className="w-auto h-[60px] mobile-svg-enhance"
               />
             </div>
           </motion.div>
