@@ -63,7 +63,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.7, ease: easeInOutCubic }}
             className="max-w-2xl mx-auto text-xl mb-8 font-normal hero-text space-y-2"
           >
-            <p>The most adavnced football weather app ever created.</p>
+            <p>The most advanced football weather app ever created.</p>
             <p>Download for FREE now.</p>
           </motion.div>
           <div className="flex justify-center gap-4 mb-16">
