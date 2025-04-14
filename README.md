@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+**MGW - My Game Weather**
 
-## Getting Started
+**Project Overview**
 
-First, run the development server:
+MGW (My Game Weather) is a NextJS-based website for a mobile application that provides detailed weather forecasts for football matches. The application allows users to access weather information for over 25,000 teams from 1,100+ leagues worldwide, helping football fans prepare for match conditions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Features**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Global Team Coverage: Access to 25,000+ teams from 1,100+ leagues and cups worldwide
+- Detailed Weather Forecasts: Accurate weather data from industry-leading global sources
+- Advanced Visualizations: Weather animations for temperature, rain, wind, and pressure
+- Hourly Data Tables: Detailed hourly weather information for fixtures
+- Notifications: Weather alerts 3 days in advance for favorite teams
+- Favorite Teams: Save preferred teams for quick access to weather data
+- Multiple Subscription Plans: Free Universal plan with core features, paid plans (Supporter, Season Ticket, and Ultra) for ad-free experience
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Tech Stack**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Framework: Next.js
+- Custom components with Tailwind CSS
+- UI components with shadcn/ui pattern
+- Animations: Framer Motion for smooth, interactive animations
+- Theming: Dark/light mode support via next-themes
+- Analytics: Vercel Analytics integration
+- Deployment: Optimized for Vercel deployment
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**App Store Integration:**
+- Direct links to iOS App Store and Google Play Store
