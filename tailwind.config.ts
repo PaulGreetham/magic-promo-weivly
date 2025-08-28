@@ -98,11 +98,11 @@ const config = {
         },
       },
       fontFamily: {
-        heading: ["var(--font-heading)", "sans-serif"],
-        text: ["var(--font-text)", "sans-serif"],
-        sans: ["var(--font-text)", "sans-serif"],
+        heading: ["var(--font-heading)", "-apple-system", "BlinkMacSystemFont", "SF Pro Display", "SF Pro Text", "Helvetica Neue", "Helvetica", "Roboto", "Segoe UI", "Arial", "system-ui", "sans-serif"],
+        text: ["var(--font-text)", "-apple-system", "BlinkMacSystemFont", "SF Pro Display", "SF Pro Text", "Helvetica Neue", "Helvetica", "Roboto", "Segoe UI", "Arial", "system-ui", "sans-serif"],
+        sans: ["-apple-system", "BlinkMacSystemFont", "SF Pro Display", "SF Pro Text", "Helvetica Neue", "Helvetica", "Roboto", "Segoe UI", "Arial", "system-ui", "sans-serif"],
+        mono: ["ui-monospace", "SFMono-Regular", "SF Mono", "Roboto Mono", "Menlo", "Monaco", "Consolas", "Liberation Mono", "monospace"],
         bebas: ["BebasNeue_400Regular", "sans-serif"],
-        poppins: ["Poppins", "sans-serif"],
       },
       fontSize: {
         xs: '12px',

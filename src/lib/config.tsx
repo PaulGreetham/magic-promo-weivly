@@ -17,8 +17,8 @@ import {
 export const BLUR_FADE_DELAY = 0.15;
 
 export const siteConfig = {
-  name: "MGW",
-  description: "My Game Weather",
+  name: "Weivly",
+  description: "Weivly",
   cta: "Download Now",
   url: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
   appStoreUrl: "https://apps.apple.com/nl/app/my-game-weather/id6742402918?l=en-GB",

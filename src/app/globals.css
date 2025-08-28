@@ -4,6 +4,9 @@
 
 @layer base {
   :root {
+    /* Platform UI font stacks */
+    --font-text: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Roboto, "Segoe UI", Arial, system-ui, sans-serif;
+    --font-mono: ui-monospace, "SFMono-Regular", "SF Mono", "Roboto Mono", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
@@ -29,7 +32,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    font-family: var(--font-text, Poppins), sans-serif;
+    font-family: var(--font-text, system-ui), sans-serif;
   }
 
   .dark {
@@ -84,7 +87,7 @@
 
   @supports (font-variation-settings: normal) {
     :root {
-      font-family: var(--font-text, Poppins), sans-serif;
+      font-family: var(--font-text, system-ui), sans-serif;
     }
   }
 
@@ -112,7 +115,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: var(--font-text, Poppins), sans-serif;
+    font-family: var(--font-text, system-ui), sans-serif;
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: normal;
