@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { colors as dsColors } from "./src/lib/design-system/colors";
 
 const config = {
   darkMode: ["class"],
@@ -19,6 +20,42 @@ const config = {
     },
     extend: {
       colors: {
+        brand: {
+          50: dsColors.primary[50],
+          100: dsColors.primary[100],
+          500: dsColors.primary[500],
+          600: dsColors.primary[600],
+          700: dsColors.primary[700],
+          900: dsColors.primary[900],
+        },
+        neutral: {
+          50: dsColors.neutral[50],
+          100: dsColors.neutral[100],
+          200: dsColors.neutral[200],
+          300: dsColors.neutral[300],
+          400: dsColors.neutral[400],
+          500: dsColors.neutral[500],
+          600: dsColors.neutral[600],
+          700: dsColors.neutral[700],
+          800: dsColors.neutral[800],
+          900: dsColors.neutral[900],
+        },
+        success: {
+          50: dsColors.success[50],
+          500: dsColors.success[500],
+          600: dsColors.success[600],
+        },
+        warning: {
+          50: dsColors.warning[50],
+          500: dsColors.warning[500],
+          600: dsColors.warning[600],
+        },
+        error: {
+          50: dsColors.error[50],
+          500: dsColors.error[500],
+          600: dsColors.error[600],
+          700: dsColors.error[700],
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
