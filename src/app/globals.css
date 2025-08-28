@@ -8,7 +8,8 @@
     --font-text: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Roboto, "Segoe UI", Arial, system-ui, sans-serif;
     --font-mono: ui-monospace, "SFMono-Regular", "SF Mono", "Roboto Mono", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Light mode text uses brand darkest blue (primary-900) */
+    --foreground: 221 64% 26%;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
@@ -36,7 +37,8 @@
   }
 
   .dark {
-    --background: 0 0% 0%;
+    /* Dark mode background uses brand darkest blue (primary-900) */
+    --background: 221 64% 26%;
     --foreground: 0 0% 98%;
     --card: 0 0% 0%;
     --card-foreground: 0 0% 98%;
