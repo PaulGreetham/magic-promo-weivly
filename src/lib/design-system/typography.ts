@@ -1,13 +1,11 @@
-import { Platform } from 'react-native';
+// Web font stacks (no React Native dependency)
 
 // Font families
 export const fontFamilies = {
-  default: Platform?.select
-    ? Platform.select({ ios: 'SF Pro Display', android: 'Roboto', default: 'System' })
-    : 'System',
-  mono: Platform?.select
-    ? Platform.select({ ios: 'SF Mono', android: 'Roboto Mono', default: 'Courier' })
-    : 'ui-monospace',
+  default:
+    'system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif',
+  mono:
+    'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
 } as const;
 
 // Font weights
