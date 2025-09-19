@@ -39,7 +39,7 @@ export function FeatureScroll() {
     <Section
       id="feature-scroll"
       title="Experience"
-      subtitle="How's the weather at YOUR game?"
+      subtitle="Insight today. Impact tomorrow."
       className="container px-4 sm:px-10"
     >
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mx-auto select-none">
@@ -51,11 +51,11 @@ export function FeatureScroll() {
           <picture>
             <source 
               media="(max-width: 768px)" 
-              srcSet="/MyGameWeather_Promo_Weather_Info.png" 
+              srcSet="/metric4.png" 
             />
-            <source srcSet="/MyGameWeather_Promo_Weather_Info.svg" />
+            <source srcSet="/metric4.svg" />
             <img
-              src="/MyGameWeather_Promo_Weather_Info.svg"
+              src="/metric4.svg"
               alt="iPhone 1"
               className="w-full h-full object-contain mobile-svg-enhance"
             />
@@ -70,11 +70,11 @@ export function FeatureScroll() {
           <picture>
             <source 
               media="(max-width: 768px)" 
-              srcSet="/MyGameWeather_Promo_Pressure.png" 
+              srcSet="/metric3.png" 
             />
-            <source srcSet="/MyGameWeather_Promo_Pressure.svg" />
+            <source srcSet="/metric3.svg" />
             <img
-              src="/MyGameWeather_Promo_Pressure.svg"
+              src="/metric3.svg"
               alt="iPhone 2"
               className="w-full h-full object-contain mobile-svg-enhance"
             />
@@ -89,11 +89,11 @@ export function FeatureScroll() {
           <picture>
             <source 
               media="(max-width: 768px)" 
-              srcSet="/MyGameWeather_Promo_All_Weather_Data.png" 
+              srcSet="/input2" 
             />
-            <source srcSet="/MyGameWeather_Promo_All_Weather_Data.svg" />
+            <source srcSet="/input2.svg" />
             <img
-              src="/MyGameWeather_Promo_All_Weather_Data.svg"
+              src="/input2.svg"
               alt="iPhone 3"
               className="w-full h-full object-contain mobile-svg-enhance"
             />

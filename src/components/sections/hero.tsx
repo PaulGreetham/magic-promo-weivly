@@ -102,15 +102,15 @@ export function Hero() {
         </div>
         <div className="flex flex-nowrap items-center justify-center gap-4 sm:gap-8 h-auto sm:h-[500px] select-none">
           {[
-            "/MyGameWeather_Promo_Team_Search",
-            "/MyGameWeather_Promo_Fixtures",
+            "/input1",
+            "/metric5",
             {
-              png: "/MyGameWeather_Promo_Wind.png", 
-              svg: "/MyGameWeather_Promo_Wind.svg",
+              png: "/metric1.png", 
+              svg: "/metric1.svg",
               fallback: "/placeholder.png"
             }, 
-            "/MyGameWeather_Promo_Rain",
-            "/MyGameWeather_Promo_Profile"
+            "/metric2",
+            "/dashboard2"
           ].map((item, index) => {
             // Handle both string paths and object paths
             const src = typeof item === 'string' ? item : item.svg;

@@ -1,3 +1,4 @@
+import { DashboardIcon } from "@radix-ui/react-icons";
 import {
   BellIcon,
   BrainIcon,
@@ -9,8 +10,10 @@ import {
   EarthIcon,
   EyeIcon,
   GlobeIcon,
+  PencilIcon,
   StarIcon,
   TableIcon,
+  TargetIcon,
   UsersIcon,
 } from "lucide-react";
 
@@ -35,22 +38,22 @@ export const siteConfig = {
   },
   features: [
     {
-      name: "Global Coverage",
+      name: "Comprehensive Dashboard",
       description:
-        "Access 25,000+ teams from 1,100+ leagues & cups worldwide with a single search.",
-      icon: <EarthIcon className="h-6 w-6" />,
-    },
-    {
-      name: "Elite Weather Data",
-      description:
-        "See accurate weather forecasts from industry leading global data sources.",
-      icon: <CloudSunRainIcon className="h-6 w-6" />,
+        "Track your weight, body composition & more with our comprehensive dashboard.",
+      icon: <DashboardIcon className="h-6 w-6" />,
     },
     {
       name: "Advanced Visualizations",
       description:
-        "Bring your game to life with amazing weather animations for temperature, rain, wind & pressure.",
-      icon: <EyeIcon className="h-6 w-6" />,
+        "Track progress with our advanced graph & chart data animations + table data.",
+      icon: <PencilIcon className="h-6 w-6" />,
+    },
+    {
+      name: "Target focused",
+      description:
+        "Stay motivated by setting targets and tracking your progress with our target focused metrics.",
+      icon: <TargetIcon className="h-6 w-6" />,
     },
     {
       name: "Hourly Data Tables",
@@ -71,24 +74,24 @@ export const siteConfig = {
   ],
   featureHighlight: [
     {
-      title: "Global Coverage",
+      title: "Comprehensive dashboard",
       description:
-        "Access every team from 1,100+ leagues & cups worldwide with a single search.",
-      imageSrc: "/MyGameWeather_Promo_Global_Search.svg",
+        "Track your weight, body composition & more with our metric-focused dashboard.",
+      imageSrc: "/dashboard1.svg",
       direction: "rtl" as const,
-    },
-    {
-      title: "Elite Weather Data",
-      description:
-        "See accurate weather forecasts from industry leading global data sources.",
-      imageSrc: "/MyGameWeather_Promo_Temp.svg",
-      direction: "ltr" as const,
     },
     {
       title: "Advanced Visualizations",
       description:
-        "Bring your game to life with amazing weather animations for temperature, rain, wind & pressure.",
-      imageSrc: "/MyGameWeather_Promo_Visualization.svg",
+        "Track progress with our advanced graph & chart data animations + table data.",
+      imageSrc: "/metric1.svg",
+      direction: "ltr" as const,
+    },
+    {
+      title: "Target focused",
+      description:
+        "Stay motivated by setting targets and tracking your progress with our target focused metrics.",
+      imageSrc: "/metric5.svg",
       direction: "rtl" as const,
     },
   ],
@@ -168,62 +171,47 @@ export const siteConfig = {
   ],
   pricing: [
     {
-      name: "Universal",
+      name: "Free Trial",
       href: "#",
-      price: "€0",
-      period: "always",
+      price: "Free",
+      period: "1 month",
       features: [
-        "Access to 25,000+ teams",
-        "Elite weather data",
-        "Advanced visualizations",
-        "Hourly data tables",
-        "Free notifications",
-        "Pick your favourite team",
+        "Part of Monthly plan",
+        "Part of Annual plan",
       ],
       description: "Full access",
       buttonText: "Start Free",
       isPopular: false,
     },
     {
-      name: "Supporter",
+      name: "Monthly",
       href: "#",
-      price: "€3.99",
+      price: "€1.99",
       period: "month",
       features: [
-        "Everything in Universal",
-        "No ads",
+        "Target weight date predictor",
+        "Weight metrics",
+        "Muscle % metrics",
+        "Body fat % metrics",
+        "BMI metrics",
+        "Advanced visualizations",
+        "Monthly average calculator",
       ],
       description: "Monthly subscription",
       buttonText: "Upgrade to Pro",
-      isPopular: true,
-    },
-    {
-      name: "Season Ticket",
-      href: "#",
-      price: "€39.99",
-      period: "year",
-      features: [
-        "Everything in Universal",
-        "No ads",
-        "10% discount on Supporter",
-      ],
-      description: "Annual subscription",
-      buttonText: "Start Free",
       isPopular: false,
     },
     {
-      name: "Ultra",
+      name: "Annual",
       href: "#",
-      price: "€99.99",
-      period: "lifetime",
+      price: "€9.99",
+      period: "year",
       features: [
-        "Everything in Universal",
-        "No ads",
-        "One-off payment",
-        "Best value package",
+        "Everything in Monthly",
+        "58% discount on Monthly",
       ],
-      description: "Lifetime access",
-      buttonText: "Upgrade to Pro",
+      description: "Annual subscription",
+      buttonText: "Start Free",
       isPopular: true,
     },
   ],

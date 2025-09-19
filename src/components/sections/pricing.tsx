@@ -39,7 +39,7 @@ export function Pricing() {
       className="container px-10"
       ref={ref}
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto py-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto py-10">
         {siteConfig.pricing.map((plan, index) => (
           <motion.div
             key={plan.name}
