@@ -9,28 +9,56 @@ import { ChevronRight } from "lucide-react";
 
 const reviews = [
   {
-    name: "Michael",
-    body: "The hourly weather tables are fantastic for planning my match day outfits. So detailed!",
+    name: "GaryFeathers",
+    body: "I love the target focused metrics. It helps me stay motivated and track my progress.",
   },
   {
-    name: "Sarah",
-    body: "Being able to save my favorite team makes checking weather for upcoming fixtures so quick and easy. I use it before every home game!",
+    name: "FitnessFanatic",
+    body: "I've used other apps but this is by far the best. The animations are so cool and the features bang on.",
   },
   {
-    name: "David",
-    body: "The weather visualizations are incredibly helpful. I can see at a glance if I need to bring rain gear.",
+    name: "SonjaRed",
+    body: "If you're a fitness enthusiast, this is the app for you. The graphs & charts make it so easy to understand my progress.",
   },
   {
-    name: "Emma",
-    body: "Having access to 25,000+ teams globally means I can check weather for any match I'm interested in. As someone who follows leagues across Europe, this is a total game-changer for planning viewing parties.",
+    name: "BrightSide87",
+    body: "Considering the amount of data, it's so easy to use and understand.",
   },
   {
-    name: "Thomas",
-    body: "The hourly insights are spot on - I was able to avoid a downpour during the second half last weekend!",
+    name: "KarenW",
+    body: "Happy to review! Honestly, this is the best app I've used for tracking my fitness progress.",
   },
   {
-    name: "Olivia",
-    body: "Weather notifications are a game changer. No more checking the app constantly before match day. MGW tells me exactly when conditions change so I can plan accordingly.",
+    name: "Ryan",
+    body: "Really simple. It definitely helps keep me motivated and on track.",
+  },
+  {
+    name: "Amme28",
+    body: "Spot on! The prediction date was amazing to plan my weight loss journey.",
+  },
+  {
+    name: "Chris",
+    body: "Brilliant! In Spanish as well ;)",
+  }, 
+  {
+    name: "Jenny123",
+    body: "Great way to track weight loss progress.",
+  },
+  {
+    name: "FittMum",
+    body: "Easy to use in the gym or at hom when weighing in.",
+  },
+  {
+    name: "FitnessFanatic",
+    body: "Perfect for tracking my fitness progress. The visualizations are so helpful.",
+  },
+  {
+    name: "FitnessFanatic",
+    body: "Easy to use and understand. The metrics are so helpful.",
+  },
+  {
+    name: "Harry?Ben",
+    body: "I love the target focused metrics. It helps me stay motivated and track my progress.", 
   },
 ];
 
