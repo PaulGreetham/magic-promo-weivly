@@ -32,7 +32,7 @@ export function Hero() {
           >
             <div className="bg-primary text-white text-xl font-bold p-2 h-20 w-20 flex items-center justify-center rounded-3xl mx-auto shadow-md">
               <img
-                src="/logo.png"
+                src="/logo.svg"
                 alt="MGW Logo"
                 // className="w-auto h-[60px] mobile-svg-enhance"
               />
@@ -53,7 +53,7 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.5, ease: easeInOutCubic }}
-            className="text-5xl font-bold mb-4 tracking-tighter"
+            className="text-5xl font-bold mb-4 tracking-tighter font-heading"
           >
             {siteConfig.description}
           </motion.h1>

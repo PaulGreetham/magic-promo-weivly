@@ -37,7 +37,7 @@ const icons: Icon[] = [
   },
   { 
     icon: <MdEmail className="w-5 h-5" />, 
-    url: "mailto:info@mgw.football",
+    url: "mailto:info@vertechx-collective.com",
     label: "Email"
   },
 ];
@@ -47,7 +47,6 @@ export function Footer() {
     <footer className="flex flex-col gap-y-5 rounded-lg px-7 py-5 md:px-10 container">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-x-2">
-          <Icons.logo className="h-5 w-5" />
           <h2 className="text-lg font-bold text-foreground">
             {siteConfig.name}
           </h2>

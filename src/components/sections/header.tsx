@@ -70,7 +70,7 @@ export function Header() {
               title="brand-logo"
               className="relative mr-6 flex items-center space-x-1"
             >
-              <span className="text-style-h2 uppercase tracking-wider pb-1 mt-2">Weivly</span>
+              <span className="text-style-h2 tracking-wider pb-1 mt-2">Weivly</span>
             </Link>
             <div className="flex items-center gap-2">
               <a

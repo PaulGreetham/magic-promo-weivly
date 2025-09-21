@@ -1,9 +1,15 @@
-import { Bebas_Neue } from "next/font/google";
+import { Poppins } from "next/font/google";
 
-export const fontHeading = Bebas_Neue({
+export const fontHeading = Poppins({
   subsets: ["latin"],
-  weight: "400",
+  weight: ["400", "600", "700"],
   variable: "--font-heading",
+});
+
+export const fontText = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-text",
 });
 
 // Text and mono fonts are handled via CSS fallbacks to platform UI fonts

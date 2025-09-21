@@ -50,7 +50,7 @@ export const siteConfig = {
       icon: <PencilIcon className="h-6 w-6" />,
     },
     {
-      name: "Target focused",
+      name: "Target Focused",
       description:
         "Stay motivated by setting targets and tracking your progress with our target focused metrics.",
       icon: <TargetIcon className="h-6 w-6" />,
@@ -74,7 +74,7 @@ export const siteConfig = {
   ],
   featureHighlight: [
     {
-      title: "Comprehensive dashboard",
+      title: "Comprehensive Dashboard",
       description:
         "Track your weight, body composition & more with our metric-focused dashboard.",
       imageSrc: "/dashboard1.svg",
@@ -88,7 +88,7 @@ export const siteConfig = {
       direction: "ltr" as const,
     },
     {
-      title: "Target focused",
+      title: "Target Focused",
       description:
         "Stay motivated by setting targets and tracking your progress with our target focused metrics.",
       imageSrc: "/metric5.svg",
@@ -217,66 +217,74 @@ export const siteConfig = {
   ],
   faqs: [
     {
-      question: "How accurate is the weather data in the app?",
+      question: "How do I log my weight?",
       answer: (
         <span>
-          MGW uses industry-leading global weather data sources to provide highly accurate forecasts. Our weather data is updated multiple times per day to ensure you have the most current information for any fixture.
+          Tap the big “+” button on the input tab, enter your weight, choose the date/time if needed, and save. You can also edit or delete entries from your history at any time.
         </span>
       ),
     },
     {
-      question: "How far in advance can I check weather for upcoming matches?",
+      question: "How does the target date predictor work?",
       answer: (
         <span>
-          Weather data visuzlaizations are available 4 days in advance. You can check weather forecasts, such as data info, charts and tables, for upcoming fixtures up to 14 days in advance. For the most accurate predictions, we recommend checking within 7 days of the match, as weather forecasts become more precise as the fixture approaches.
+          We use your recent trend (not just daily fluctuations) plus your goal weight to estimate a realistic target date. Daily variance and gaps in logging can affect the prediction, so weigh in consistently for best results.
         </span>
       ),
     },
     {
-      question: "How do I set notifications for my favorite team's matches?",
+      question: "What units do you support?",
       answer: (
         <span>
-          Simply create a profile, search for your favorite team, and mark them as a favorite. You'll then have the option to receive weather notifications 3 days before any fixture. Notifications are completely free and can be customized in your profile settings.
+          Kilograms, pounds and stones are supported. Change units anytime in Settings—your existing data is converted instantly.
         </span>
       ),
     },
     {
-      question: "How many teams and leagues are covered in the app?",
+      question: "How often should I weigh in?",
       answer: (
         <span>
-          MGW provides weather data for over 25,000 teams across 1,100+ leagues and cups worldwide. From the biggest professional leagues to local non-league clubs, we've got comprehensive global coverage to support fans at every level.
+          Weekly or a few times per week works well. The app smooths noise with a rolling trend line so you can focus on progress, not day‑to‑day water or sodium swings.
         </span>
       ),
     },
     {
-      question: "What weather information is available for each match?",
+      question: "Why is my trend different from my daily weight?",
       answer: (
         <span>
-          For each fixture, you can access detailed hourly data including temperature, 'feels like' temperature, wind speed and direction, precipitation probability, rainfall amounts, air pressure, and humidity. All data is presented with easy-to-understand visualizations.
+          The trend filters out short‑term fluctuations to show your underlying direction. It will move more slowly than single measurements and is a better indicator of progress.
         </span>
       ),
     },
     {
-      question: "Is MGW available for both iOS and Android?",
+      question: "Can I track body fat, muscle and BMI?",
       answer: (
         <span>
-          Yes, MGW is available for both iOS and Android. Go to the top of the page for both the iOS and Android download links.
+          Yes. You can log body fat %, muscle %, BMI and notes with each entry. If your smart scale provides these, we import them automatically when connected.
         </span>
       ),
     },
     {
-      question: "What's the difference between the free and paid versions?",
+      question: "Can I export or back up my data?",
       answer: (
         <span>
-          The free Universal version gives you complete access to all weather data and features. Our paid plans (Supporter, Season Ticket, and Ultra) simply remove advertisements from the experience. All core weather features are available in every plan.
+          Absolutely. Export CSV from Settings to analyze in your favorite tools or keep a personal backup. Your data is stored securely and can be restored when you sign in on a new device.
         </span>
       ),
     },
     {
-      question: "How can I provide feedback or report issues with the app?",
+      question: "Will I lose my data if I change phone?",
       answer: (
         <span>
-          We welcome your feedback! You can contact us directly at info@mgw.football or reach out via our social media channels. We're constantly working to improve the app and value user suggestions for new features and improvements.
+          No. Sign in on your new device and your history, goals and settings will sync automatically.
+        </span>
+      ),
+    },
+    {
+      question: "Is my data private?",
+      answer: (
+        <span>
+          We take privacy seriously. Your measurements are encrypted in transit and at rest. We never sell personal data. You control integrations and can delete your data at any time in Settings.
         </span>
       ),
     },

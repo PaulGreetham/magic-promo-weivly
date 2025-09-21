@@ -11,7 +11,7 @@ export async function GET(req: NextRequest) {
   
   // Instead of loading a local font, you can use a Google Font
   const fontData = await fetch(
-    `https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap`
+    `https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap`
   ).then((res) => res.arrayBuffer());
 
   return new ImageResponse(
@@ -29,7 +29,7 @@ export async function GET(req: NextRequest) {
           backgroundImage: `url(${siteConfig.url}/og.png)`,
           fontSize: 32,
           fontWeight: 600,
-          fontFamily: "'Bebas Neue', sans-serif",
+          fontFamily: "'Poppins', sans-serif",
         }}
       >
         <div
@@ -60,7 +60,7 @@ export async function GET(req: NextRequest) {
               textAlign: "center",
               width: "80%",
               letterSpacing: "-0.05em", // Added tighter tracking
-              fontFamily: "BebasNeue",
+              fontFamily: "Poppins",
             }}
           >
             {postTitle}
@@ -72,7 +72,7 @@ export async function GET(req: NextRequest) {
               fontWeight: "500",
               marginTop: "16px",
               color: "#808080",
-              fontFamily: "BebasNeue",
+              fontFamily: "Poppins",
             }}
           >
             {siteConfig.name}
@@ -99,7 +99,7 @@ export async function GET(req: NextRequest) {
       height: 630,
       fonts: [
         {
-          name: "Bebas Neue",
+          name: "Poppins",
           data: fontData,
           style: "normal",
         },
