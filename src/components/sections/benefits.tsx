@@ -23,8 +23,8 @@ export function Benefits() {
 
   return (
     <Section
-      title="Instructions"
-      subtitle={`How to use ${siteConfig.name}`}
+      title="INSTRUCTIONS"
+      subtitle={`How To Use ${siteConfig.name}`}
       className="bg-muted relative max-w-screen"
     >
       <div

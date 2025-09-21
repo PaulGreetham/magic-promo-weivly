@@ -38,8 +38,8 @@ export function FeatureScroll() {
   return (
     <Section
       id="feature-scroll"
-      title="Experience"
-      subtitle="Insight today. Impact tomorrow."
+      title="EXPERIENCE"
+      subtitle="Insight Today. Impact Tomorrow."
       className="container px-4 sm:px-10"
     >
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mx-auto select-none">

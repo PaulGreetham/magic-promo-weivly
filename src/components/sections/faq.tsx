@@ -11,7 +11,7 @@ export function FAQ() {
   return (
     <Section
       id="faq"
-      title="FAQ"
+      title="FAQs"
       subtitle="Frequently Asked Questions"
       className="container px-10"
     >

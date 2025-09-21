@@ -55,8 +55,8 @@ export function BentoGrid() {
   return (
     <Section
       id="bento"
-      title="Benefits"
-      subtitle="What can Weivly do for you?"
+      title="BENEFITS"
+      subtitle="What Can Weivly Do for You?"
       className="mx-auto max-w-screen-md px-10"
       ref={ref}
     >

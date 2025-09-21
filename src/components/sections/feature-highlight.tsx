@@ -143,8 +143,8 @@ export function FeatureHighlight() {
   return (
     <Section
       id="feature-highlight"
-      title="Features"
-      subtitle="Take control of your journey"
+      title="FEATURES"
+      subtitle="Take Control of Your Journey"
       className="container px-10"
       ref={containerRef}
     >

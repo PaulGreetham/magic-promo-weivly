@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 export function Testimonials() {
   return (
     <Section
-      title="Testimonials"
+      title="TESTIMONIALS"
       subtitle="What our users say"
       className="container px-10"
     >

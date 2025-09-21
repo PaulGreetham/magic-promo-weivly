@@ -34,8 +34,8 @@ export function Pricing() {
   return (
     <Section
       id="pricing"
-      title="Pricing"
-      subtitle="simple pricing"
+      title="PRICING"
+      subtitle="Simple Pricing"
       className="container px-10"
       ref={ref}
     >
