@@ -63,12 +63,11 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.7, ease: easeInOutCubic }}
             className="max-w-2xl mx-auto text-xl mb-8 font-normal hero-text space-y-2"
           >
-            <p>Weight tracking made simple.</p>
-            <p>Download for FREE now.</p>
+            <p>The weight tracking app that’s simple, smart, & built to motivate.</p>
           </motion.div>
           <div className="flex justify-center gap-4 mb-16">
             <motion.a
-              href="https://apps.apple.com/nl/app/my-game-weather/id6742402918?l=en-GB"
+              href="https://apps.apple.com/sa/app/weivly/id6751336415?uo=2"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 1 }}
@@ -84,7 +83,7 @@ export function Hero() {
             </motion.a>
             
             <motion.a
-              href="https://play.google.com/store/apps/details?id=com.mygameweather.app"
+              href="https://apps.apple.com/sa/app/weivly/id6751336415?uo=2"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}

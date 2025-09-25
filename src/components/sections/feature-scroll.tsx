@@ -39,7 +39,7 @@ export function FeatureScroll() {
     <Section
       id="feature-scroll"
       title="EXPERIENCE"
-      subtitle="Insight Today. Impact Tomorrow."
+      subtitle="Data Driven Insights"
       className="container px-4 sm:px-10"
     >
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mx-auto select-none">

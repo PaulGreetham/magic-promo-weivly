@@ -24,7 +24,7 @@ export function Benefits() {
   return (
     <Section
       title="INSTRUCTIONS"
-      subtitle={`How To Use ${siteConfig.name}`}
+      subtitle="The Weivly Journey"
       className="bg-muted relative max-w-screen"
     >
       <div

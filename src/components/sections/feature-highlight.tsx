@@ -144,7 +144,7 @@ export function FeatureHighlight() {
     <Section
       id="feature-highlight"
       title="FEATURES"
-      subtitle="Take Control of Your Journey"
+      subtitle="Control Your Journey"
       className="container px-10"
       ref={containerRef}
     >
