@@ -17,23 +17,18 @@ interface Icon {
 const icons: Icon[] = [
   { 
     icon: <TwitterLogoIcon className="w-5 h-5" />, 
-    url: "https://twitter.com/mgw_football",
+    url: "https://twitter.com/weivly_app",
     label: "Twitter"
   },
   { 
     icon: <InstagramLogoIcon className="w-5 h-5" />, 
-    url: "https://instagram.com/mgw_football",
+    url: "https://instagram.com/weivly.app",
     label: "Instagram"
   },
   { 
     icon: <FaThreads className="w-4 h-4" />, 
-    url: "https://threads.net/@mgw_football",
+    url: "https://threads.net/@weivly.app",
     label: "Threads"
-  },
-  { 
-    icon: <FaTiktok className="w-4 h-4" />, 
-    url: "https://tiktok.com/@mgw_football",
-    label: "TikTok"
   },
   { 
     icon: <MdEmail className="w-5 h-5" />, 
