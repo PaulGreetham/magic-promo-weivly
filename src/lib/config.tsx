@@ -97,42 +97,42 @@ export const siteConfig = {
   ],
   bento: [
     {
-      title: "Match Time Display",
+      title: "Help keep you on track",
       content:
-        "No scrolling needed! Easily see the match duration and kick off time for your favorite teams fixtures in the data sections.",
-      imageSrc: "/MyGameWeather_Promo_Match_Time_Highlight.svg",
+        "Weivly is designed to be simple and is 100% focused on weight tracking. No clutter, just dedicated features to help you achieve your goals.",
+      imageSrc: "/metric6.svg",
       imageAlt: "Team collaboration illustration",
       fullWidth: false,
     },
     {
-      title: "Schedule Prompts",
+      title: "Provide critical data",
       content:
-        "If fixture weather data is not available yet, you can schedule a notification to get the weather for your favourite teams fixtures.",
-      imageSrc: "/MyGameWeather_Promo_No_Data_Available.svg",
+        "Weivly provides you with the data you need. We don't overwhelm you with too much information, making it easier for you to stay on track.",
+      imageSrc: "/metric4.svg",
       imageAlt: "Time blocking illustration",
       fullWidth: false,
     },
     {
-      title: "Notifications",
+      title: "Track calendar input trends",
       content:
-        "Be prepared for all eventualities with weather notifications for your favorite teams 3 days in advance of the fixture. Notifications are always free.",
-      imageSrc: "/MyGameWeather_Promo_Notifications.svg",
+        "Our input calendar allows you to track your input dates so you can increase consistency in your weight tracking.",
+      imageSrc: "/input2.svg",
       imageAlt: "AI scheduling illustration",
       fullWidth: true,
     },
     {
-      title: "Hourly Data Tables",
+      title: "Input Time Heatmap",
       content:
-        "Effortlessly see hourly weather data for your favorite teams fixture with detailed temp, feels like temp, wind speed and % chance of rain.",
-      imageSrc: "/MyGameWeather_Promo_Weather_Table.svg",
+        "Our input time heatmap allows you to see your input dates and times so you can increase consistency in your weight tracking.",
+      imageSrc: "/metrics8.svg",
       imageAlt: "Team collaboration illustration",
       fullWidth: false,
     },
     {
-      title: "Easy Search",
+      title: "Displays Averages",
       content:
-        "Save time by having your favourite team saved in the team search, so you can quickly find the weather for their next fixtures.",
-      imageSrc: "/MyGameWeather_Promo_Easy_Favourite_Search.svg",
+        "Week-by-week isnights are critial to seeing progress, but seeing bigger picture trends can also help you achieve your goals.",
+      imageSrc: "/metrics7.svg",
       imageAlt: "Smart reminders illustration",
       fullWidth: false,
     },
@@ -140,34 +140,44 @@ export const siteConfig = {
   benefits: [
     {
       id: 1,
-      text: "Search from 25,000+ teams",
-      image: "/MyGameWeather_Promo_Global_Search.svg",
+      text: "Download & Sign Up",
+      image: "/login1.svg",
     },
     {
       id: 2,
-      text: "Choose from next 5 fixtures",
-      image: "/MyGameWeather_Promo_Fixtures.svg",
+      text: "Get 1 Month Free Trial",
+      image: "/login2.svg",
     },
     {
       id: 3,
-      text: "See advanced visualizations",
-      image: "/MyGameWeather_Promo_Visualization.svg",
+      text: "Input Weight Metrics",
+      image: "/input3.svg",
     },
     {
       id: 4,
-      text: "Get hourly insights",
-      image: "/MyGameWeather_Promo_All_Weather_Data.svg",
+      text: "Analyse Changes Table",
+      image: "/metric6.svg",
     },
     {
       id: 5,
-      text: "Create profile",
-      image: "/MyGameWeather_Promo_Profile.svg",
+      text: "View Weekly Metrics",
+      image: "/metric1.svg",
     },
     {
       id: 6,
-      text: "Receive weather notifications",
-      image: "/MyGameWeather_Promo_Notifications.svg",
-    }
+      text: "View Monthly Averages",
+      image: "/metric2.svg",
+    },
+    {
+      id: 7,
+      text: "Check Target Progress",
+      image: "/metric5.svg",
+    },
+    {
+      id: 8,
+      text: "Repeat & Stay Motivated",
+      image: "/input3.svg",
+    },
   ],
   pricing: [
     {
