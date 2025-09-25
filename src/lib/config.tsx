@@ -4,6 +4,7 @@ import {
   BrainIcon,
   CalendarIcon,
   ChartLineIcon,
+  CircleDivideIcon,
   ClockIcon,
   CloudIcon,
   CloudSunRainIcon,
@@ -46,30 +47,30 @@ export const siteConfig = {
     {
       name: "Advanced Visualizations",
       description:
-        "Track progress with our advanced graph & chart data animations + table data.",
+        "Track progress with our advanced graph & chart data animations & table data.",
       icon: <PencilIcon className="h-6 w-6" />,
     },
     {
-      name: "Target Focused",
+      name: "Target Focused Metrics",
       description:
-        "Stay motivated by setting targets and tracking your progress with our target focused metrics.",
+        "Stay motivated by setting targets and tracking progress with our focused metrics.",
       icon: <TargetIcon className="h-6 w-6" />,
     },
     {
-      name: "Hourly Data Tables",
-      description: "Easily see hourly weather data for your favorite teams fixture with detailed information.",
-      icon: <TableIcon className="h-6 w-6" />,
+      name: "Predicted Target Date",
+      description: "We predict the date you will reach your target weight based on your trends & goal weight.",
+      icon: <ClockIcon className="h-6 w-6" />,
     },
     {
-      name: "Notifications",
-      description: "Receive weather notifications 3 days in advance for your favorite teams&apos; fixtures.",
-      icon: <BellIcon className="h-6 w-6" />,
+      name: "Average Calculation Metrics",
+      description: "Weekly metrics track progress, but big-picture trends can help you achieve your goals.",
+      icon: <CircleDivideIcon className="h-6 w-6" />,
     },
     {
-      name: "Favourite Team",
+      name: "Input Frquency Metrics",
       description:
-        "Create a profile to save your favorite teams and easily find their weather data.",
-      icon: <StarIcon className="h-6 w-6" />,
+        "Remove potential weight metric anamoloies by increasing consistency with input metrics.",
+      icon: <CalendarIcon className="h-6 w-6" />,
     },
   ],
   featureHighlight: [
