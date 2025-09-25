@@ -89,7 +89,7 @@ export function FeatureScroll() {
           <picture>
             <source 
               media="(max-width: 768px)" 
-              srcSet="/input2" 
+              srcSet="/input2.png" 
             />
             <source srcSet="/input2.svg" />
             <img
