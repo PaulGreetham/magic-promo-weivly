@@ -130,9 +130,9 @@ export const siteConfig = {
       fullWidth: false,
     },
     {
-      title: "Displays Averages",
+      title: "Calculates Averages",
       content:
-        "Week-by-week isnights are critial to seeing progress, but seeing bigger picture trends can also help you achieve your goals.",
+        "Week-by-week insights are critial to seeing progress, but seeing bigger picture trends can also help you achieve your goals.",
       imageSrc: "/metrics7.svg",
       imageAlt: "Smart reminders illustration",
       fullWidth: false,

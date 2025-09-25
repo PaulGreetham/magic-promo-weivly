@@ -7,7 +7,7 @@ import { easeInOutCubic } from "@/lib/animation";
 import { siteConfig } from "@/lib/config";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
-import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
@@ -65,13 +65,30 @@ export function Header() {
           className={cn("sticky top-0 z-50 p-0 bg-background/60 backdrop-blur")}
         >
           <div className="flex justify-between items-center container mx-auto p-2">
-            <Link
-              href="/"
+            <a
+              href="#"
               title="brand-logo"
+              aria-label="Scroll to top"
               className="relative mr-6 flex items-center space-x-1"
+              onClick={(e) => {
+                e.preventDefault();
+                const heroSection = document.getElementById('hero');
+                if (heroSection) {
+                  heroSection.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+              }}
             >
-              <span className="text-style-h2 tracking-wider pb-1 mt-2">Weivly</span>
-            </Link>
+              <Image
+                src="/logo.png"
+                alt="Weivly logo"
+                width={40}
+                height={40}
+                className="h-8 w-8 lg:h-10 lg:w-10 rounded-2xl"
+                priority
+              />
+            </a>
             <div className="flex items-center gap-2">
               <a
                 href="#"
